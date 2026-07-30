@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Digli">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#667eea"/>
+      <stop offset="100%" stop-color="#764ba2"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <g transform="translate(256 256)" fill="none" stroke="#ffffff">
+    <circle r="150" stroke-width="16"/>
+    <circle r="118" stroke-width="10"/>
+    <circle r="90" stroke-width="10"/>
+  </g>
+  <circle cx="256" cy="256" r="58" fill="#c9a84c"/>
+  <circle cx="256" cy="256" r="10" fill="#764ba2"/>
+</svg>
