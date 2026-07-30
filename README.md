@@ -1,8 +1,8 @@
 # digli-site
 
-Marketing site for [Digli](https://app.digli.ca) — the vinyl collection app.
+Marketing site for [Digli](https://app.digli.ca) — the vinyl collection app for iPhone.
 
-Scan records, fill your dig pile, and build a shelf worth coming home to.
+Light, Apple.ca-inspired product page with app screenshots for Scan, Shelf, and Dig Pile.
 
 ## Local preview
 
@@ -14,4 +14,4 @@ Open [http://localhost:4173](http://localhost:4173).
 
 ## Stack
 
-Static HTML, CSS, and a small JS file. Brand assets and Satoshi typeface are mirrored from the Digli app.
+Static HTML, CSS, and a small JS file. Brand assets and Satoshi wordmark typeface are mirrored from the Digli app. Screen mockups live in `assets/screens/`.
