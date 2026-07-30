@@ -15,7 +15,7 @@ if ("IntersectionObserver" in window && revealItems.length) {
         }
       }
     },
-    { threshold: 0.2, rootMargin: "0px 0px -8% 0px" }
+    { threshold: 0.18, rootMargin: "0px 0px -6% 0px" }
   );
 
   revealItems.forEach((item) => observer.observe(item));
