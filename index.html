@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>digli — Track every album you love</title>
+    <meta
+      name="description"
+      content="Scan records, fill your dig pile, and build a shelf worth coming home to. Digli helps vinyl collectors track what they own and what to hunt next."
+    />
+    <meta name="theme-color" content="#0b0b0f" />
+    <meta property="og:title" content="digli — Track every album you love" />
+    <meta
+      property="og:description"
+      content="Scan records, fill your dig pile, and build a shelf worth coming home to."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://digli.ca" />
+    <meta property="og:image" content="/assets/icon.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="apple-touch-icon" href="/assets/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="/" aria-label="digli home">digli</a>
+      <a class="btn btn--ghost btn--sm" href="https://app.digli.ca">Open app</a>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-brand">
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__wash"></div>
+          <div class="vinyl">
+            <div class="vinyl__platter">
+              <div class="vinyl__grooves"></div>
+              <div class="vinyl__label">
+                <span class="vinyl__label-mark">d</span>
+              </div>
+              <div class="vinyl__shine"></div>
+            </div>
+          </div>
+          <div class="hero__grain"></div>
+          <div class="hero__fade"></div>
+        </div>
+
+        <div class="hero__copy">
+          <p id="hero-brand" class="wordmark wordmark--hero">digli</p>
+          <h1 class="hero__headline">Track every album you love.</h1>
+          <p class="hero__lede">
+            Know which vinyl you own, and discover which records to hunt next.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--gold" href="https://app.digli.ca">Get started</a>
+            <p class="hero__note">Free to get started</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="band reveal" aria-labelledby="scan-title">
+        <p class="eyebrow">Scan</p>
+        <h2 id="scan-title" class="band__title">Point. Capture. Catalogued.</h2>
+        <p class="band__copy">
+          Snap an album cover or barcode and Digli recognizes the record —
+          ready for your shelf or dig pile in seconds.
+        </p>
+      </section>
+
+      <section class="band band--alt reveal" aria-labelledby="shelf-title">
+        <p class="eyebrow">Shelf</p>
+        <h2 id="shelf-title" class="band__title">A shelf worth coming home to.</h2>
+        <p class="band__copy">
+          Keep every owned record in one place. Browse by genre crates, revisit
+          favorites, and never wonder if you already have that pressing.
+        </p>
+      </section>
+
+      <section class="band reveal" aria-labelledby="hunt-title">
+        <p class="eyebrow">Hunt</p>
+        <h2 id="hunt-title" class="band__title">Fill your dig pile.</h2>
+        <p class="band__copy">
+          Save what you’re hunting, import from Discogs, and walk into the shop
+          knowing exactly which records still belong on your want list.
+        </p>
+      </section>
+
+      <section class="closing reveal" aria-labelledby="closing-title">
+        <p class="wordmark wordmark--closing">digli</p>
+        <h2 id="closing-title" class="closing__title">Build your collection.</h2>
+        <p class="closing__copy">
+          Scan records, fill your dig pile, and keep your vinyl story close.
+        </p>
+        <a class="btn btn--gold" href="https://app.digli.ca">Open Digli</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark wordmark--footer" href="/">digli</a>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="https://app.digli.ca">App</a>
+        <a href="https://app.digli.ca/privacy">Privacy</a>
+        <a href="https://app.digli.ca/about">About</a>
+      </nav>
+      <p class="footer-copy">© <span id="year"></span> Digli</p>
+    </footer>
+
+    <script src="/main.js" defer></script>
+  </body>
+</html>
