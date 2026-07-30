@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>digli — Track every album you love</title>
+    <title>digli — Discover the collector you are</title>
     <meta
       name="description"
-      content="Digli is the vinyl collection app for iPhone. Scan records, fill your dig pile, and build a shelf worth coming home to."
+      content="Digli is an intelligent companion for vinyl collectors. Scan your records, reveal your Collector Profile, and discover albums that belong on your shelf."
     />
     <meta name="theme-color" content="#ffffff" />
-    <meta property="og:title" content="digli — Track every album you love" />
+    <meta property="og:title" content="digli — Discover the collector you are" />
     <meta
       property="og:description"
-      content="Scan records, fill your dig pile, and build a shelf worth coming home to."
+      content="Scan your records, reveal your Collector Profile, and discover albums that belong on your shelf."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://digli.ca" />
@@ -29,8 +29,8 @@
       <div class="nav__inner">
         <a class="wordmark" href="/" aria-label="digli home">digli</a>
         <nav class="nav__links" aria-label="Primary">
-          <a href="#scan">Scan</a>
-          <a href="#shelf">Shelf</a>
+          <a href="#profile">Profile</a>
+          <a href="#match">Match</a>
           <a href="#hunt">Hunt</a>
         </nav>
         <a class="nav__cta" href="https://app.digli.ca">Open app</a>
@@ -41,9 +41,10 @@
       <section class="hero" aria-labelledby="hero-brand">
         <div class="hero__copy">
           <p id="hero-brand" class="wordmark wordmark--hero">digli</p>
-          <h1 class="hero__headline">Track every album you love.</h1>
+          <h1 class="hero__headline">Discover the collector you are.</h1>
           <p class="hero__lede">
-            Know which vinyl you own, and discover which records to hunt next.
+            Scan your records, reveal your Collector Profile, and discover albums
+            that belong on your shelf.
           </p>
           <div class="hero__cta">
             <a
@@ -58,7 +59,7 @@
                 alt="Download on the App Store"
               />
             </a>
-            <p class="hero__note">Free to get started</p>
+            <p class="hero__note">Start with 10 free scans</p>
           </div>
         </div>
 
@@ -68,7 +69,7 @@
               <div class="phone__notch"></div>
               <img
                 class="phone__screen"
-                src="/assets/screens/shelf.svg"
+                src="/assets/screens/collector-profile.svg"
                 width="390"
                 height="844"
                 alt=""
@@ -79,11 +80,116 @@
         </div>
       </section>
 
-      <section class="feature feature--tint reveal" id="scan" aria-labelledby="scan-title">
+      <section class="values reveal" aria-labelledby="values-title">
+        <h2 id="values-title" class="values__title">Built for collectors.</h2>
+        <div class="values__grid">
+          <article class="value">
+            <h3 class="value__title">Collector Profile</h3>
+            <p class="value__copy">
+              Discover the personality hidden in your collection.
+            </p>
+          </article>
+          <article class="value">
+            <h3 class="value__title">Collection Match</h3>
+            <p class="value__copy">
+              Know why an album belongs on your shelf.
+            </p>
+          </article>
+          <article class="value">
+            <h3 class="value__title">Worth the Hunt</h3>
+            <p class="value__copy">
+              Find records you’ll actually love—not just popular releases.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="feature feature--tint reveal" id="profile" aria-labelledby="profile-title">
+        <div class="feature__copy">
+          <h2 id="profile-title" class="feature__title">Your Collector Profile.</h2>
+          <p class="feature__lede">
+            Digli reads the patterns in your shelf and names the collector
+            behind them—so you see your taste with clarity.
+          </p>
+          <a class="text-link" href="https://app.digli.ca">See your profile <span aria-hidden="true">›</span></a>
+        </div>
+        <div class="feature__media">
+          <div class="phone">
+            <div class="phone__bezel">
+              <div class="phone__notch"></div>
+              <img
+                class="phone__screen"
+                src="/assets/screens/collector-profile.svg"
+                width="390"
+                height="844"
+                alt="Digli Collector Profile showing The Atmospheric Collector"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature feature--flip reveal" id="match" aria-labelledby="match-title">
+        <div class="feature__copy">
+          <h2 id="match-title" class="feature__title">Collection Match.</h2>
+          <p class="feature__lede">
+            Before you buy, see how a record fits what you already own—and why
+            it belongs with you.
+          </p>
+          <a class="text-link" href="https://app.digli.ca">Check a match <span aria-hidden="true">›</span></a>
+        </div>
+        <div class="feature__media">
+          <div class="phone">
+            <div class="phone__bezel">
+              <div class="phone__notch"></div>
+              <img
+                class="phone__screen"
+                src="/assets/screens/collection-match.svg"
+                width="390"
+                height="844"
+                alt="Digli Collection Match score for an album"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature feature--tint reveal" id="hunt" aria-labelledby="hunt-title">
+        <div class="feature__copy">
+          <h2 id="hunt-title" class="feature__title">Worth the Hunt.</h2>
+          <p class="feature__lede">
+            Recommendations tuned to your DNA—not charts. Walk into the shop
+            knowing what is actually worth finding.
+          </p>
+          <a class="text-link" href="https://app.digli.ca">Explore hunts <span aria-hidden="true">›</span></a>
+        </div>
+        <div class="feature__media">
+          <div class="phone">
+            <div class="phone__bezel">
+              <div class="phone__notch"></div>
+              <img
+                class="phone__screen"
+                src="/assets/screens/worth-the-hunt.svg"
+                width="390"
+                height="844"
+                alt="Digli Worth the Hunt recommendations"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature reveal" id="scan" aria-labelledby="scan-title">
         <div class="feature__copy">
           <h2 id="scan-title" class="feature__title">Point. Capture. Catalogued.</h2>
           <p class="feature__lede">
-            Snap an album cover or barcode and Digli recognizes the record —
+            Snap an album cover or barcode and Digli recognizes the record—
             ready for your dig pile in seconds.
           </p>
           <a class="text-link" href="https://app.digli.ca">Try scanning <span aria-hidden="true">›</span></a>
@@ -106,7 +212,7 @@
         </div>
       </section>
 
-      <section class="feature feature--flip reveal" id="shelf" aria-labelledby="shelf-title">
+      <section class="feature feature--tint feature--flip reveal" id="shelf" aria-labelledby="shelf-title">
         <div class="feature__copy">
           <h2 id="shelf-title" class="feature__title">A shelf worth coming home to.</h2>
           <p class="feature__lede">
@@ -133,33 +239,6 @@
         </div>
       </section>
 
-      <section class="feature feature--tint reveal" id="hunt" aria-labelledby="hunt-title">
-        <div class="feature__copy">
-          <h2 id="hunt-title" class="feature__title">Fill your dig pile.</h2>
-          <p class="feature__lede">
-            Save what you’re hunting, import from Discogs, and walk into the shop
-            knowing exactly which records still belong on your want list.
-          </p>
-          <a class="text-link" href="https://app.digli.ca">Start digging <span aria-hidden="true">›</span></a>
-        </div>
-        <div class="feature__media">
-          <div class="phone">
-            <div class="phone__bezel">
-              <div class="phone__notch"></div>
-              <img
-                class="phone__screen"
-                src="/assets/screens/dig-pile.svg"
-                width="390"
-                height="844"
-                alt="Digli Dig Pile screen with recently scanned records"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section class="closing reveal" aria-labelledby="closing-title">
         <img
           class="closing__icon"
@@ -171,9 +250,9 @@
           decoding="async"
         />
         <p class="wordmark wordmark--closing">digli</p>
-        <h2 id="closing-title" class="closing__title">Build your collection.</h2>
+        <h2 id="closing-title" class="closing__title">Build a better collection.</h2>
         <p class="closing__copy">
-          Scan records, fill your dig pile, and keep your vinyl story close.
+          Digli understands your taste—and helps you find what belongs next.
         </p>
         <a
           class="store-badge"

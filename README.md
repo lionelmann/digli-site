@@ -2,7 +2,7 @@
 
 Marketing site for [Digli](https://app.digli.ca) — the vinyl collection app for iPhone.
 
-Light, Apple.ca-inspired product page with app screenshots for Scan, Shelf, and Dig Pile.
+Light, Apple.ca-inspired product page focused on Collector Profile, Collection Match, and Worth the Hunt.
 
 ## Local preview
 
