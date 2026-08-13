@@ -1047,6 +1047,39 @@ button {
   }
 }
 
+.support-path {
+  margin: 0.85rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+.legal {
+  width: min(100%, 46rem);
+  margin: 0 auto;
+  padding: 0 var(--gutter) 4.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.legal h2 {
+  margin: 1rem 0 0;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.legal p {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.legal__note {
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--card);
+  color: var(--ink) !important;
+}
+
 /* Motion */
 
 .reveal {
