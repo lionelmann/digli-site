@@ -39,9 +39,9 @@ if ("IntersectionObserver" in window && revealItems.length) {
 
 const tasteCopy = {
   atmospheric:
-    "That’s The Atmospheric Collector — dusk tones and slow-burn side B deep cuts. Digli writes it from the records already on your shelf.",
+    "That’s The Atmospheric Collector: dusk tones and slow-burn side B deep cuts. Digli writes it from the records already on your shelf.",
   hopper:
-    "That’s a crate hopper — jazz to soul to the 70s in one afternoon. Your Dig Profile keeps the jumps, not just the genres.",
+    "That’s a crate hopper: jazz to soul to the 70s in one afternoon. Your Dig Profile keeps the jumps, not just the genres.",
   press:
     "That’s a first-press loyalist. Eras, labels, and the hunt show up in your DNA once the keepers land on Your Shelf.",
 };
