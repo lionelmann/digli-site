@@ -3,24 +3,173 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>digli · Know your vinyl collection and what comes next</title>
+    <title>Digli — Vinyl companion for iPhone | Know your collection</title>
     <meta
       name="description"
-      content="Digli is a vinyl companion for iPhone. Know your vinyl collection and what to hunt, buy, and play next. Start with 10 free scans."
+      content="Digli is the vinyl companion for iPhone. Scan covers or barcodes, build your shelf, get Dig Profile and Collection Match, and know what to hunt, buy, and play next. 10 free scans."
     />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <link rel="canonical" href="https://digli.ca/" />
+    <link rel="alternate" type="text/plain" title="LLM instructions" href="https://digli.ca/llms.txt" />
     <meta name="theme-color" content="#f4eee4" />
-    <meta property="og:title" content="digli · Know your vinyl collection and what comes next" />
+    <meta name="author" content="Digli" />
+    <meta name="application-name" content="Digli" />
+
+    <meta property="og:site_name" content="Digli" />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://digli.ca/" />
+    <meta property="og:title" content="Digli — Vinyl companion for iPhone" />
     <meta
       property="og:description"
-      content="Scan what you own. Digli learns your collection and helps you decide what comes next."
+      content="Scan what you own. Digli learns your collection and helps you decide what to hunt, buy, and play next. Start with 10 free scans."
     />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://digli.ca" />
-    <meta property="og:image" content="/assets/icon.png" />
+    <meta property="og:image" content="https://digli.ca/assets/icon.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:image:alt" content="Digli mark — gold vinyl rings with a solid lowercase d" />
+
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Digli — Vinyl companion for iPhone" />
+    <meta
+      name="twitter:description"
+      content="Scan what you own. Digli learns your collection and helps you decide what comes next. 10 free scans."
+    />
+    <meta name="twitter:image" content="https://digli.ca/assets/icon.png" />
+    <meta name="twitter:image:alt" content="Digli mark — gold vinyl rings with a solid lowercase d" />
+
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
     <link rel="apple-touch-icon" href="/assets/icon.png" />
     <link rel="stylesheet" href="/styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://digli.ca/#organization",
+            "name": "Digli",
+            "url": "https://digli.ca/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://digli.ca/assets/icon.png",
+              "width": 1024,
+              "height": 1024
+            },
+            "description": "Digli makes a vinyl companion app for iPhone that helps collectors catalog records and decide what to hunt, buy, and play next."
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://digli.ca/#website",
+            "url": "https://digli.ca/",
+            "name": "Digli",
+            "description": "Official Digli marketing site — vinyl companion for iPhone.",
+            "publisher": { "@id": "https://digli.ca/#organization" },
+            "inLanguage": "en-CA"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://digli.ca/#webpage",
+            "url": "https://digli.ca/",
+            "name": "Digli — Vinyl companion for iPhone",
+            "isPartOf": { "@id": "https://digli.ca/#website" },
+            "about": { "@id": "https://digli.ca/#app" },
+            "description": "Scan vinyl covers or barcodes, build your shelf, and get recommendations based on what you own. 10 free scans.",
+            "inLanguage": "en-CA"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://digli.ca/#app",
+            "name": "Digli",
+            "applicationCategory": "LifestyleApplication",
+            "operatingSystem": "iOS",
+            "url": "https://app.digli.ca",
+            "downloadUrl": "https://app.digli.ca",
+            "image": "https://digli.ca/assets/icon.png",
+            "description": "Vinyl companion for iPhone. Scan album covers or barcodes, build Your Shelf, discover Dig Profile, Collection Match, Worth the Hunt, and import from Discogs.",
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "Free",
+                "price": "0",
+                "priceCurrency": "USD",
+                "description": "10 free scans, Dig Pile, Shelf, Want List, and one Discogs import. No card required."
+              },
+              {
+                "@type": "Offer",
+                "name": "Digli Pro",
+                "price": "3.99",
+                "priceCurrency": "USD",
+                "description": "Unlimited scans, Dig Profile, Collection Match, Worth the Hunt, Match My Mood, Today’s Spin, Liner Notes, and Discogs sync. Billed monthly through Apple."
+              }
+            ],
+            "featureList": [
+              "Cover and barcode scan",
+              "Dig Pile, Your Shelf, and Want List",
+              "Dig Profile collector portrait",
+              "Collection Match fit scores",
+              "Worth the Hunt suggestions",
+              "Match My Mood",
+              "Discogs import and sync",
+              "30-second track previews",
+              "Today’s Spin"
+            ],
+            "publisher": { "@id": "https://digli.ca/#organization" }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://digli.ca/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is Digli?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Digli is a vinyl companion app for iPhone. Scan album covers or barcodes, build your collection on Your Shelf, and get recommendations based on what you already own — Dig Profile, Collection Match, Worth the Hunt, and more."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is Digli free?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes to start. New collectors get 10 free scans with no credit card. Digli Pro is $3.99 per month through Apple for unlimited scans and full features."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does Digli work with Discogs?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Import your Discogs collection onto Your Shelf. Free includes one import; Digli Pro keeps your shelf in sync."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Dig Profile?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Dig Profile is a collector portrait built from records on Your Shelf. It describes how you collect — personality, insights, and taste tags. The full portrait is part of Digli Pro."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Collection Match?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Collection Match scores how a record fits what you already own and explains why. Use it in the shop before you buy. Worth the Hunt suggests records you don’t own yet."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -450,11 +599,7 @@
           src="/assets/icon.png"
           width="96"
           height="96"
-          alt=""
-          loading="lazy"
-          decoding="async"
-        />
-        <p class="wordmark">digli</p>
+          alt="Digli"
         <h2 id="closing-title" class="closing__copy">
           Scan a few records and see.
         </h2>
