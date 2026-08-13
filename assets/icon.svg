@@ -1,16 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Digli">
-  <!-- Mark derived from the hero faded gold circle -->
   <rect width="512" height="512" fill="#f4eee4"/>
 
-  <!-- Soft outer glow rings (hero motif) -->
-  <circle cx="256" cy="256" r="198" fill="none" stroke="#c9a84c" stroke-width="36" opacity="0.14"/>
-  <circle cx="256" cy="256" r="148" fill="none" stroke="#c9a84c" stroke-width="72" opacity="0.07"/>
+  <!-- Darker outside → lighter inside -->
+  <circle cx="256" cy="256" r="208" fill="none" stroke="#9e8230" stroke-width="22" opacity="0.95"/>
+  <circle cx="256" cy="256" r="176" fill="none" stroke="#b8973f" stroke-width="18" opacity="0.75"/>
+  <circle cx="256" cy="256" r="146" fill="none" stroke="#c9a84c" stroke-width="14" opacity="0.5"/>
+  <circle cx="256" cy="256" r="120" fill="none" stroke="#d4bc74" stroke-width="11" opacity="0.35"/>
+  <circle cx="256" cy="256" r="96" fill="none" stroke="#e0d0a0" stroke-width="9" opacity="0.28"/>
 
-  <!-- Readable core for small sizes -->
-  <circle cx="256" cy="256" r="118" fill="none" stroke="#c9a84c" stroke-width="14" opacity="0.55"/>
-  <circle cx="256" cy="256" r="92" fill="none" stroke="#c9a84c" stroke-width="10" opacity="0.85"/>
-
-  <!-- Vinyl center -->
-  <circle cx="256" cy="256" r="58" fill="#c9a84c"/>
-  <circle cx="256" cy="256" r="16" fill="#1c1610"/>
+  <!-- Solid gold core, no black spindle -->
+  <circle cx="256" cy="256" r="62" fill="#c9a84c"/>
 </svg>

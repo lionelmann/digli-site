@@ -1,5 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Digli app icon">
-  <!-- App icon: hero circle motif with enough contrast for home screens -->
   <defs>
     <radialGradient id="paper" cx="38%" cy="32%" r="75%">
       <stop offset="0%" stop-color="#fffaf2"/>
@@ -8,13 +7,12 @@
   </defs>
   <rect width="512" height="512" fill="url(#paper)"/>
 
-  <!-- Faded ring stack (same language as hero::before) -->
-  <circle cx="256" cy="256" r="210" fill="none" stroke="#c9a84c" stroke-width="40" opacity="0.12"/>
-  <circle cx="256" cy="256" r="168" fill="#c9a84c" opacity="0.06"/>
-  <circle cx="256" cy="256" r="132" fill="none" stroke="#c9a84c" stroke-width="16" opacity="0.35"/>
-  <circle cx="256" cy="256" r="104" fill="none" stroke="#c9a84c" stroke-width="12" opacity="0.7"/>
+  <!-- Punchy rings: darkest outside, fading inward -->
+  <circle cx="256" cy="256" r="214" fill="none" stroke="#8a7024" stroke-width="26" opacity="1"/>
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#9e8230" stroke-width="20" opacity="0.88"/>
+  <circle cx="256" cy="256" r="150" fill="none" stroke="#b8973f" stroke-width="16" opacity="0.65"/>
+  <circle cx="256" cy="256" r="124" fill="none" stroke="#c9a84c" stroke-width="12" opacity="0.42"/>
+  <circle cx="256" cy="256" r="100" fill="none" stroke="#d8c488" stroke-width="10" opacity="0.28"/>
 
-  <!-- Solid mark -->
-  <circle cx="256" cy="256" r="64" fill="#c9a84c"/>
-  <circle cx="256" cy="256" r="18" fill="#1c1610"/>
+  <circle cx="256" cy="256" r="68" fill="#c9a84c"/>
 </svg>
