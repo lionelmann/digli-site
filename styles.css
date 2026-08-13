@@ -238,7 +238,7 @@ button {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 3.25rem var(--gutter) 0;
+  padding: 3.25rem 0 0;
 }
 
 .hero::before {
@@ -257,6 +257,7 @@ button {
 .hero__grid {
   width: min(100%, var(--max));
   margin: 0 auto;
+  padding: 0 var(--gutter);
   display: grid;
   gap: 2.5rem;
   align-items: end;
