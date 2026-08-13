@@ -36,31 +36,3 @@ if ("IntersectionObserver" in window && revealItems.length) {
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
-
-const tasteCopy = {
-  atmospheric:
-    "That’s Dusk Tones: slow-burn side B deep cuts and late-night jazz. Digli writes it from the records already on your shelf.",
-  hopper:
-    "That’s Crate Hopper: jazz to soul to the 70s in one afternoon. Your Dig Profile keeps the jumps, not just the genres.",
-  deep:
-    "That’s Completist: when an artist clicks, you want the whole run. Digli notices that once keepers land on Your Shelf.",
-};
-
-const reveal = document.querySelector(".taste__reveal");
-document.querySelectorAll(".taste__pick").forEach((button) => {
-  button.addEventListener("click", () => {
-    document.querySelectorAll(".taste__pick").forEach((item) => {
-      item.classList.remove("is-active");
-      item.setAttribute("aria-pressed", "false");
-    });
-    button.classList.add("is-active");
-    button.setAttribute("aria-pressed", "true");
-    if (reveal) {
-      reveal.hidden = false;
-      reveal.classList.remove("is-in");
-      reveal.textContent = tasteCopy[button.dataset.taste] || "";
-      void reveal.offsetWidth;
-      reveal.classList.add("is-in");
-    }
-  });
-});
