@@ -561,36 +561,84 @@ button {
   }
 }
 
-/* Gallery */
+/* Wedge */
 
-.gallery {
-  padding: 3rem 0 2rem;
-  overflow: hidden;
-}
-
-.gallery__track {
-  display: flex;
-  gap: 1.5rem;
-  width: max-content;
+.wedge {
+  width: min(100%, var(--max));
+  margin: 0 auto;
   padding: 1rem var(--gutter) 2.5rem;
-  animation: drift 48s linear infinite;
 }
 
-.gallery:hover .gallery__track {
-  animation-play-state: paused;
+.wedge__title {
+  margin: 0;
+  max-width: 38rem;
+  font-size: clamp(1.45rem, 3.2vw, 2rem);
+  font-weight: 650;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  color: var(--ink);
 }
 
-.gallery .phone {
-  width: 14.5rem;
-  flex: none;
+/* Captioned shots */
+
+.shots {
+  width: min(100%, var(--max));
+  margin: 0 auto;
+  padding: 2rem var(--gutter) 4rem;
 }
 
-@keyframes drift {
-  from {
-    transform: translateX(0);
+.shots__intro {
+  margin-bottom: 1.75rem;
+}
+
+.shots__title {
+  margin: 0;
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
+  letter-spacing: -0.03em;
+}
+
+.shots__grid {
+  display: grid;
+  gap: 1.75rem 1.25rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.shot {
+  margin: 0;
+  display: grid;
+  gap: 0.85rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.shot .phone {
+  width: min(100%, 12.5rem);
+}
+
+.shot figcaption {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.shot figcaption strong {
+  font-size: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.shot figcaption span {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+@media (min-width: 900px) {
+  .shots__grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1.5rem 1rem;
   }
-  to {
-    transform: translateX(-50%);
+
+  .shot .phone {
+    width: 100%;
   }
 }
 
@@ -1056,8 +1104,7 @@ button {
 
   .hero__copy > *,
   .reveal-phone,
-  .reveal,
-  .gallery__track {
+  .reveal {
     animation: none !important;
     transition: none !important;
     opacity: 1 !important;
