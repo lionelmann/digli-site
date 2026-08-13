@@ -387,7 +387,6 @@ button {
 
 .phone {
   width: min(100%, 17.5rem);
-  filter: drop-shadow(var(--phone-shadow));
 }
 
 .phone__bezel {
@@ -396,6 +395,7 @@ button {
   border-radius: 2.35rem;
   padding: 0.5rem;
   border: 1px solid #3a3228;
+  box-shadow: var(--phone-shadow);
 }
 
 .phone__notch {
