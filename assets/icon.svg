@@ -1,18 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Digli">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#667eea"/>
-      <stop offset="100%" stop-color="#764ba2"/>
-    </linearGradient>
-  </defs>
-  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
-  <g transform="translate(256 256)" fill="none" stroke="#ffffff" stroke-width="7" opacity="0.95">
-    <circle r="150" stroke-width="10"/>
-    <circle r="132"/>
-    <circle r="116"/>
-    <circle r="100"/>
-    <circle r="84"/>
-  </g>
-  <circle cx="256" cy="256" r="60" fill="#c9a84c"/>
-  <circle cx="256" cy="256" r="8" fill="#764ba2"/>
+  <!-- Mark derived from the hero faded gold circle -->
+  <rect width="512" height="512" fill="#f4eee4"/>
+
+  <!-- Soft outer glow rings (hero motif) -->
+  <circle cx="256" cy="256" r="198" fill="none" stroke="#c9a84c" stroke-width="36" opacity="0.14"/>
+  <circle cx="256" cy="256" r="148" fill="none" stroke="#c9a84c" stroke-width="72" opacity="0.07"/>
+
+  <!-- Readable core for small sizes -->
+  <circle cx="256" cy="256" r="118" fill="none" stroke="#c9a84c" stroke-width="14" opacity="0.55"/>
+  <circle cx="256" cy="256" r="92" fill="none" stroke="#c9a84c" stroke-width="10" opacity="0.85"/>
+
+  <!-- Vinyl center -->
+  <circle cx="256" cy="256" r="58" fill="#c9a84c"/>
+  <circle cx="256" cy="256" r="16" fill="#1c1610"/>
 </svg>

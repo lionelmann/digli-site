@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Digli app icon">
+  <!-- App icon: hero circle motif with enough contrast for home screens -->
+  <defs>
+    <radialGradient id="paper" cx="38%" cy="32%" r="75%">
+      <stop offset="0%" stop-color="#fffaf2"/>
+      <stop offset="100%" stop-color="#ebe2d3"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#paper)"/>
+
+  <!-- Faded ring stack (same language as hero::before) -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#c9a84c" stroke-width="40" opacity="0.12"/>
+  <circle cx="256" cy="256" r="168" fill="#c9a84c" opacity="0.06"/>
+  <circle cx="256" cy="256" r="132" fill="none" stroke="#c9a84c" stroke-width="16" opacity="0.35"/>
+  <circle cx="256" cy="256" r="104" fill="none" stroke="#c9a84c" stroke-width="12" opacity="0.7"/>
+
+  <!-- Solid mark -->
+  <circle cx="256" cy="256" r="64" fill="#c9a84c"/>
+  <circle cx="256" cy="256" r="18" fill="#1c1610"/>
+</svg>
