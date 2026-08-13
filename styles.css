@@ -303,15 +303,14 @@ button {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  min-height: 28rem;
+  min-height: 34rem;
   position: relative;
-  overflow: hidden;
 }
 
 .hero__phones {
   position: relative;
   width: min(100%, 22rem);
-  height: 30rem;
+  height: 34.5rem;
 }
 
 .hero__phones .phone {
@@ -345,11 +344,12 @@ button {
 
   .hero__stage {
     justify-content: flex-end;
+    min-height: 42rem;
   }
 
   .hero__phones {
     width: 26rem;
-    height: 36rem;
+    height: 42rem;
   }
 
   .hero__phones .phone--front {
