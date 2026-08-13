@@ -24,6 +24,7 @@
   --font: "Satoshi", "Iowan Old Style", Georgia, "Times New Roman", serif;
   --gutter: clamp(1.25rem, 4vw, 2.75rem);
   --max: 72rem;
+  --page-inset: max(var(--gutter), calc((100% - var(--max)) / 2 + var(--gutter)));
   --nav-h: 4.25rem;
   --radius: 1.35rem;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -108,9 +109,9 @@ button {
 }
 
 .wrap {
-  width: min(100%, var(--max));
-  margin: 0 auto;
-  padding: 0 var(--gutter);
+  width: 100%;
+  margin: 0;
+  padding: 0 var(--page-inset);
 }
 
 /* Nav */
@@ -127,10 +128,10 @@ button {
 }
 
 .nav__inner {
-  width: min(100%, var(--max));
+  width: 100%;
   height: 100%;
-  margin: 0 auto;
-  padding: 0 var(--gutter);
+  margin: 0;
+  padding: 0 var(--page-inset);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -226,7 +227,7 @@ button {
     top: var(--nav-h);
     left: 0;
     right: 0;
-    padding: 1.25rem var(--gutter) 1.5rem;
+    padding: 1.25rem var(--page-inset) 1.5rem;
     background: var(--paper);
     border-bottom: 1px solid var(--line);
     gap: 1rem;
@@ -238,7 +239,7 @@ button {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 3.25rem var(--gutter) 0;
+  padding: 3.25rem 0 0;
 }
 
 .hero::before {
@@ -255,8 +256,9 @@ button {
 }
 
 .hero__grid {
-  width: min(100%, var(--max));
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
+  padding: 0 var(--page-inset);
   display: grid;
   gap: 2.5rem;
   align-items: end;
@@ -303,6 +305,7 @@ button {
   align-items: flex-end;
   min-height: 28rem;
   position: relative;
+  overflow: hidden;
 }
 
 .hero__phones {
@@ -340,6 +343,10 @@ button {
     padding-top: 4.5rem;
   }
 
+  .hero__stage {
+    justify-content: flex-end;
+  }
+
   .hero__phones {
     width: 26rem;
     height: 36rem;
@@ -352,7 +359,7 @@ button {
 
   .hero__phones .phone--back {
     width: 15rem;
-    right: -0.5rem;
+    right: 0;
   }
 }
 
@@ -450,9 +457,9 @@ button {
 /* Steps */
 
 .steps {
-  width: min(100%, var(--max));
-  margin: 0 auto;
-  padding: 4rem var(--gutter) 2rem;
+  width: 100%;
+  margin: 0;
+  padding: 4rem var(--page-inset) 2rem;
 }
 
 .steps__title {
@@ -508,9 +515,9 @@ button {
 /* Wedge */
 
 .wedge {
-  width: min(100%, var(--max));
-  margin: 0 auto;
-  padding: 1rem var(--gutter) 2.5rem;
+  width: 100%;
+  margin: 0;
+  padding: 1rem var(--page-inset) 2.5rem;
 }
 
 .wedge__title {
@@ -534,9 +541,9 @@ button {
 /* Captioned shots */
 
 .shots {
-  width: min(100%, var(--max));
-  margin: 0 auto;
-  padding: 2rem var(--gutter) 4rem;
+  width: 100%;
+  margin: 0;
+  padding: 2rem var(--page-inset) 4rem;
 }
 
 .shots__intro {
@@ -597,9 +604,9 @@ button {
 /* Features */
 
 .feature {
-  width: min(100%, var(--max));
-  margin: 0 auto;
-  padding: 4.5rem var(--gutter);
+  width: 100%;
+  margin: 0;
+  padding: 4.5rem var(--page-inset);
   display: grid;
   gap: 2.4rem;
   align-items: center;
@@ -609,8 +616,8 @@ button {
   width: 100%;
   max-width: none;
   background: var(--paper-2);
-  padding-left: max(var(--gutter), calc((100% - var(--max)) / 2 + var(--gutter)));
-  padding-right: max(var(--gutter), calc((100% - var(--max)) / 2 + var(--gutter)));
+  padding-left: var(--page-inset);
+  padding-right: var(--page-inset);
 }
 
 .feature__title {
@@ -647,9 +654,9 @@ button {
 /* Extra features */
 
 .extras {
-  width: min(100%, var(--max));
-  margin: 0 auto;
-  padding: 2rem var(--gutter) 4.5rem;
+  width: 100%;
+  margin: 0;
+  padding: 2rem var(--page-inset) 4.5rem;
 }
 
 .extras__title {
@@ -691,7 +698,7 @@ button {
 .pricing {
   background: var(--espresso);
   color: #f6efe4;
-  padding: 4.75rem var(--gutter);
+  padding: 4.75rem var(--page-inset);
 }
 
 .pricing .eyebrow {
@@ -699,8 +706,8 @@ button {
 }
 
 .pricing__intro {
-  width: min(100%, var(--max));
-  margin: 0 auto 2rem;
+  width: 100%;
+  margin: 0 0 2rem;
 }
 
 .pricing__intro h2 {
@@ -716,8 +723,8 @@ button {
 }
 
 .pricing__grid {
-  width: min(100%, var(--max));
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   display: grid;
   gap: 1rem;
 }
@@ -806,7 +813,7 @@ button {
 
 .closing {
   text-align: center;
-  padding: 5.5rem var(--gutter) 5rem;
+  padding: 5.5rem var(--page-inset) 5rem;
 }
 
 .closing__icon {
@@ -844,9 +851,9 @@ button {
 }
 
 .site-footer__inner {
-  width: min(100%, var(--max));
-  margin: 0 auto;
-  padding: 1.6rem var(--gutter) 2.4rem;
+  width: 100%;
+  margin: 0;
+  padding: 1.6rem var(--page-inset) 2.4rem;
   display: grid;
   gap: 1rem;
 }
@@ -872,7 +879,7 @@ button {
 /* Support page */
 
 .page-hero {
-  padding: 3.5rem var(--gutter) 2rem;
+  padding: 3.5rem var(--page-inset) 2rem;
 }
 
 .page-hero__inner {
@@ -894,9 +901,9 @@ button {
 }
 
 .support-grid {
-  width: min(100%, var(--max));
-  margin: 0 auto;
-  padding: 0 var(--gutter) 4.5rem;
+  width: 100%;
+  margin: 0;
+  padding: 0 var(--page-inset) 4.5rem;
   display: grid;
   gap: 1.5rem;
 }
@@ -985,7 +992,7 @@ button {
     bottom: 0;
     z-index: 40;
     justify-content: center;
-    padding: 0.75rem var(--gutter) calc(0.75rem + env(safe-area-inset-bottom));
+    padding: 0.75rem var(--page-inset) calc(0.75rem + env(safe-area-inset-bottom));
     background: rgba(244, 238, 228, 0.94);
     backdrop-filter: blur(16px);
     border-top: 1px solid var(--line);
@@ -1002,7 +1009,7 @@ button {
 .legal {
   width: min(100%, 46rem);
   margin: 0 auto;
-  padding: 0 var(--gutter) 4.5rem;
+  padding: 0 var(--page-inset) 4.5rem;
   display: grid;
   gap: 0.85rem;
 }
