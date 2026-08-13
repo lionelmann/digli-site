@@ -562,9 +562,10 @@ button {
 .wedge__lede {
   margin: 0.85rem 0 0;
   max-width: 34rem;
-  font-size: 1.05rem;
-  line-height: 1.55;
-  color: var(--ink-soft);
+  font-size: 1.12rem;
+  font-weight: 450;
+  line-height: 1.5;
+  color: var(--ink);
 }
 
 /* Captioned shots */
@@ -914,7 +915,7 @@ button {
 
 .page-hero__inner {
   width: min(100%, 46rem);
-  margin: 0 auto;
+  margin: 0;
 }
 
 .page-hero h1 {
@@ -928,6 +929,12 @@ button {
   margin: 0.9rem 0 0;
   color: var(--ink-soft);
   font-size: 1.12rem;
+}
+
+.page-hero .eyebrow {
+  margin: 0 0 0.65rem;
+  color: var(--gold-deep);
+  font-size: 0.72rem;
 }
 
 .support-grid {
@@ -1037,11 +1044,14 @@ button {
 }
 
 .legal {
-  width: min(100%, 46rem);
-  margin: 0 auto;
-  padding: 0 var(--page-inset) 4.5rem;
-  display: grid;
-  gap: 0.85rem;
+  /* Same left edge as .page-hero__inner (page inset), readable max width */
+  width: min(46rem, calc(100% - 2 * var(--page-inset)));
+  margin: 0 0 0 var(--page-inset);
+  padding: 0 0 4.5rem;
+}
+
+.legal > * + * {
+  margin-top: 0.85rem;
 }
 
 .legal h2 {
@@ -1067,8 +1077,9 @@ button {
 
 .legal ul,
 .legal ol {
-  margin: 0.25rem 0 0;
-  padding-left: 1.25rem;
+  margin: 0.25rem 0 0 20px;
+  padding-left: 1.25em;
+  list-style-position: outside;
   color: var(--ink-soft);
 }
 
