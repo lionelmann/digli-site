@@ -829,16 +829,12 @@ button {
   margin: 0.85rem 0 0.7rem;
 }
 
-.closing__title {
-  margin: 0;
-  font-size: clamp(1.7rem, 4vw, 2.4rem);
-  letter-spacing: -0.03em;
-}
-
 .closing__copy {
   margin: 0.75rem auto 1.5rem;
   max-width: 30rem;
   color: var(--ink-soft);
+  font-size: 1.08rem;
+  font-weight: 450;
 }
 
 /* Footer */
