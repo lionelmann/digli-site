@@ -1041,8 +1041,10 @@ button {
   width: min(46rem, calc(100% - 2 * var(--page-inset)));
   margin: 0 0 0 var(--page-inset);
   padding: 0 0 4.5rem;
-  display: grid;
-  gap: 0.85rem;
+}
+
+.legal > * + * {
+  margin-top: 0.85rem;
 }
 
 .legal h2 {
@@ -1069,7 +1071,8 @@ button {
 .legal ul,
 .legal ol {
   margin: 0.25rem 0 0;
-  padding-left: 1.55rem;
+  padding-left: 20px;
+  list-style-position: outside;
   color: var(--ink-soft);
 }
 
