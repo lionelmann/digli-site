@@ -420,13 +420,15 @@ button {
   background: #0b0b0f;
 }
 
-/* Real screenshots: fill the bezel cleanly, no fake notch over UI */
+/* Real screenshots: keep native proportions, no fake notch */
 .phone--photo .phone__notch {
   display: none;
 }
 
 .phone--photo .phone__screen {
-  object-fit: fill;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center top;
 }
 
 /* Dig Profile samples (inside feature copy) */
