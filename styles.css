@@ -930,6 +930,12 @@ button {
   font-size: 1.12rem;
 }
 
+.page-hero .eyebrow {
+  margin: 0 0 0.65rem;
+  color: var(--gold-deep);
+  font-size: 0.72rem;
+}
+
 .support-grid {
   width: 100%;
   margin: 0;
