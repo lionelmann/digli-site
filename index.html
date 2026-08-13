@@ -88,7 +88,7 @@
                   <div class="phone__notch"></div>
                   <img
                     class="phone__screen"
-                    src="/assets/screens/collector-profile.svg"
+                    src="/assets/screens/dashboard.svg"
                     width="390"
                     height="844"
                     alt=""
@@ -246,8 +246,23 @@
           <h2 id="profile-title" class="feature__title">Your Dig Profile.</h2>
           <p class="feature__lede">
             Digli looks at what’s on your shelf and describes how you collect.
-            The more you add, the sharper it gets.
+            Find out if you’re a crate digger, a completist, or something else
+            entirely.
           </p>
+          <ul class="feature__samples">
+            <li>
+              <strong>Dusk Tones</strong>
+              <span>Slow-burn side B deep cuts, ambient edges, late-night jazz.</span>
+            </li>
+            <li>
+              <strong>Crate Hopper</strong>
+              <span>Jazz to soul to the 70s in one afternoon.</span>
+            </li>
+            <li>
+              <strong>Completist</strong>
+              <span>When an artist clicks, you want the whole run.</span>
+            </li>
+          </ul>
         </div>
         <div class="feature__media">
           <div class="phone">
@@ -264,38 +279,6 @@
               />
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="taste reveal" aria-labelledby="taste-title">
-        <div class="taste__intro">
-          <p class="eyebrow">Not a quiz</p>
-          <h2 id="taste-title">Dig Profiles</h2>
-          <p>
-            Digli writes yours from the records on your shelf. Here are three
-            examples. There are many more.
-          </p>
-        </div>
-        <div class="taste__picks">
-          <article class="taste__pick">
-            <strong>Dusk Tones</strong>
-            <span>Slow-burn side B deep cuts, ambient edges, late-night jazz.</span>
-          </article>
-          <article class="taste__pick">
-            <strong>Crate Hopper</strong>
-            <span>Jazz to soul to the 70s in one afternoon. The pile never sits still.</span>
-          </article>
-          <article class="taste__pick">
-            <strong>Completist</strong>
-            <span>When an artist clicks, you want the whole run, not just the hit.</span>
-          </article>
-        </div>
-        <div class="taste__more" aria-hidden="true">
-          <div class="taste__ghost"><span>Late-Night Digger</span></div>
-          <div class="taste__ghost"><span>Era Loyal</span></div>
-          <div class="taste__ghost"><span>Mood Crate</span></div>
-          <div class="taste__ghost"><span>Genre Purist</span></div>
-          <p class="taste__more-label">+ many more</p>
         </div>
       </section>
 
@@ -352,6 +335,33 @@
         </div>
       </section>
 
+      <section class="feature feature--band feature--flip reveal" id="discogs" aria-labelledby="discogs-title">
+        <div class="feature__copy">
+          <p class="eyebrow">Discogs</p>
+          <h2 id="discogs-title" class="feature__title">Already cataloged? Bring it over.</h2>
+          <p class="feature__lede">
+            Import your Discogs collection onto Your Shelf. One free import to
+            start. Digli Pro keeps it in sync.
+          </p>
+        </div>
+        <div class="feature__media">
+          <div class="phone">
+            <div class="phone__bezel">
+              <div class="phone__notch"></div>
+              <img
+                class="phone__screen"
+                src="/assets/screens/discogs-import.svg"
+                width="390"
+                height="844"
+                alt="Discogs import screen showing a connected account and records filing onto the shelf"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="extras reveal" aria-labelledby="extras-title">
         <h2 id="extras-title" class="extras__title">Also included</h2>
         <div class="extras__grid">
@@ -376,8 +386,8 @@
             <p>Hear a track from the album before you decide. Useful in the shop.</p>
           </article>
           <article class="extra">
-            <h3>Discogs import</h3>
-            <p>Bring a collection you already keep. One free import; Pro keeps it in sync.</p>
+            <h3>Match My Mood</h3>
+            <p>Pick a moment. Digli picks a record from your shelf.</p>
           </article>
         </div>
       </section>
@@ -388,7 +398,8 @@
           <h2 id="pro-title">$3.99/month for Digli Pro.</h2>
           <p>
             Start with 10 free scans. Upgrade when you want unlimited scans,
-            Dig Profile, Match, and Hunt. Cancel anytime in Apple Settings.
+            Dig Profile, Match, Hunt, and Discogs sync. Cancel anytime in Apple
+            Settings.
           </p>
         </div>
         <div class="pricing__grid">
@@ -411,7 +422,7 @@
               <li>Full Dig Profile</li>
               <li>Collection Match and Same Orbit</li>
               <li>Worth the Hunt and Match My Mood</li>
-              <li>Today’s Spin, liner notes, Discogs sync</li>
+              <li>Today’s Spin, Liner Notes, Discogs sync</li>
             </ul>
             <p class="plan__note">Restore purchases anytime in the app. You can stay on 10 free scans.</p>
           </article>
@@ -429,10 +440,9 @@
           decoding="async"
         />
         <p class="wordmark">digli</p>
-        <h2 id="closing-title" class="closing__title">Try it.</h2>
-        <p class="closing__copy">
+        <h2 id="closing-title" class="closing__copy">
           Scan a few records and see.
-        </p>
+        </h2>
         <a
           class="store-badge"
           href="https://app.digli.ca"
