@@ -42,8 +42,8 @@ const tasteCopy = {
     "That’s The Atmospheric Collector: dusk tones and slow-burn side B deep cuts. Digli writes it from the records already on your shelf.",
   hopper:
     "That’s a crate hopper: jazz to soul to the 70s in one afternoon. Your Dig Profile keeps the jumps, not just the genres.",
-  press:
-    "That’s a pressing hunter. Digli picks up eras and labels in your DNA once the keepers land on Your Shelf.",
+  deep:
+    "That’s a completist. Digli notices the artists and eras you keep returning to once keepers land on Your Shelf.",
 };
 
 const reveal = document.querySelector(".taste__reveal");
