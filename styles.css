@@ -483,6 +483,40 @@ button {
   animation: rise-in 0.45s var(--ease);
 }
 
+.taste__more {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 1rem;
+  mask-image: linear-gradient(90deg, #000 55%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, #000 55%, transparent 100%);
+}
+
+.taste__ghost {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.4rem;
+  padding: 0.45rem 0.9rem;
+  border: 1px dashed var(--line-strong);
+  border-radius: 999px;
+  background: rgba(255, 250, 242, 0.55);
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  font-weight: 550;
+  opacity: 0.72;
+  pointer-events: none;
+  user-select: none;
+}
+
+.taste__more-label {
+  margin: 0;
+  color: var(--gold-deep);
+  font-size: 0.92rem;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
 @media (min-width: 800px) {
   .taste__picks {
     grid-template-columns: repeat(3, 1fr);
