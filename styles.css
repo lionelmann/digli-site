@@ -131,7 +131,7 @@ button {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0 var(--page-inset);
+  padding: 0 max(var(--gutter), calc((100% - var(--max)) / 2 + var(--gutter)));
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -258,7 +258,7 @@ button {
 .hero__grid {
   width: 100%;
   margin: 0;
-  padding: 0 var(--page-inset);
+  padding: 0 max(var(--gutter), calc((100% - var(--max)) / 2 + var(--gutter)));
   display: grid;
   gap: 2.5rem;
   align-items: end;
