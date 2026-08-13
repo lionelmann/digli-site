@@ -418,6 +418,9 @@ button {
   object-position: top center;
   border-radius: 1.85rem;
   background: #0b0b0f;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 /* Real screenshots: keep native proportions + status chrome */
