@@ -420,9 +420,49 @@ button {
   background: #0b0b0f;
 }
 
-/* Real screenshots: keep native proportions, no fake notch */
+/* Real screenshots: keep native proportions + status chrome */
+.phone--photo .phone__bezel {
+  padding: 0.55rem;
+  padding-top: 2.05rem;
+}
+
 .phone--photo .phone__notch {
-  display: none;
+  display: block;
+  top: 0.55rem;
+  background: #0b0b0f;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.phone--photo .phone__bezel::before {
+  content: "9:41";
+  position: absolute;
+  top: 0.72rem;
+  left: 1.15rem;
+  z-index: 3;
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.phone--photo .phone__bezel::after {
+  content: "";
+  position: absolute;
+  top: 0.85rem;
+  right: 1.2rem;
+  z-index: 3;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.9;
+  box-shadow:
+    0.5rem 0 0 rgba(255, 255, 255, 0.55),
+    1rem 0 0 rgba(255, 255, 255, 0.3);
+  pointer-events: none;
 }
 
 .phone--photo .phone__screen {
