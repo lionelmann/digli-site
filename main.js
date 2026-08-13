@@ -43,7 +43,7 @@ const tasteCopy = {
   hopper:
     "That’s a crate hopper: jazz to soul to the 70s in one afternoon. Your Dig Profile keeps the jumps, not just the genres.",
   press:
-    "That’s a first-press loyalist. Eras, labels, and the hunt show up in your DNA once the keepers land on Your Shelf.",
+    "That’s a pressing hunter. Digli picks up eras and labels in your DNA once the keepers land on Your Shelf.",
 };
 
 const reveal = document.querySelector(".taste__reveal");
