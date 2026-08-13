@@ -57,7 +57,10 @@ document.querySelectorAll(".taste__pick").forEach((button) => {
     button.setAttribute("aria-pressed", "true");
     if (reveal) {
       reveal.hidden = false;
+      reveal.classList.remove("is-in");
       reveal.textContent = tasteCopy[button.dataset.taste] || "";
+      void reveal.offsetWidth;
+      reveal.classList.add("is-in");
     }
   });
 });
