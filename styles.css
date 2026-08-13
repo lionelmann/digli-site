@@ -914,7 +914,7 @@ button {
 
 .page-hero__inner {
   width: min(100%, 46rem);
-  margin: 0 auto;
+  margin: 0;
 }
 
 .page-hero h1 {
