@@ -562,9 +562,10 @@ button {
 .wedge__lede {
   margin: 0.85rem 0 0;
   max-width: 34rem;
-  font-size: 1.05rem;
-  line-height: 1.55;
-  color: var(--ink-soft);
+  font-size: 1.12rem;
+  font-weight: 450;
+  line-height: 1.5;
+  color: var(--ink);
 }
 
 /* Captioned shots */
