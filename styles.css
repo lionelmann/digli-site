@@ -855,6 +855,7 @@ button {
 .closing .wordmark {
   font-size: clamp(2.2rem, 6vw, 3.2rem);
   margin: 0.85rem 0 0.7rem;
+  color: var(--gold-deep);
 }
 
 .closing__copy {
