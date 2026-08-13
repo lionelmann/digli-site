@@ -39,11 +39,11 @@ if ("IntersectionObserver" in window && revealItems.length) {
 
 const tasteCopy = {
   atmospheric:
-    "That’s an atmospheric collector: dusk tones and slow-burn side B deep cuts. Digli writes it from the records already on your shelf.",
+    "That’s Dusk Tones: slow-burn side B deep cuts and late-night jazz. Digli writes it from the records already on your shelf.",
   hopper:
-    "That’s a crate hopper: jazz to soul to the 70s in one afternoon. Your Dig Profile keeps the jumps, not just the genres.",
+    "That’s Crate Hopper: jazz to soul to the 70s in one afternoon. Your Dig Profile keeps the jumps, not just the genres.",
   deep:
-    "That’s a completist: when an artist clicks, you want the whole run. Digli notices that once keepers land on Your Shelf.",
+    "That’s Completist: when an artist clicks, you want the whole run. Digli notices that once keepers land on Your Shelf.",
 };
 
 const reveal = document.querySelector(".taste__reveal");
