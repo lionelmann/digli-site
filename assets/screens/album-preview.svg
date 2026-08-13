@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-label="Digli album screen with 30-second track previews">
+  <defs>
+    <linearGradient id="previewCover" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a2f4a"/>
+      <stop offset="100%" stop-color="#c9a84c"/>
+    </linearGradient>
+  </defs>
+  <rect width="390" height="844" fill="#0b0b0f"/>
+  <rect x="0" y="0" width="390" height="54" fill="#0b0b0f"/>
+  <text x="28" y="36" fill="#ffffff" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">9:41</text>
+  <circle cx="330" cy="30" r="5" fill="#fff" opacity="0.9"/>
+  <circle cx="346" cy="30" r="5" fill="#fff" opacity="0.55"/>
+  <circle cx="362" cy="30" r="5" fill="#fff" opacity="0.3"/>
+
+  <text x="24" y="88" fill="#8a8a93" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="14">Album</text>
+
+  <rect x="95" y="108" width="200" height="200" rx="12" fill="url(#previewCover)"/>
+  <circle cx="195" cy="208" r="58" fill="none" stroke="#ffffff33" stroke-width="2"/>
+  <circle cx="195" cy="208" r="16" fill="#0b0b0f"/>
+  <circle cx="195" cy="208" r="6" fill="#c9a84c"/>
+
+  <text x="195" y="344" text-anchor="middle" fill="#ffffff" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" font-weight="700">Bright Size Life</text>
+  <text x="195" y="370" text-anchor="middle" fill="#8a8a93" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15">Pat Metheny · 1976</text>
+
+  <rect x="20" y="396" width="350" height="348" rx="22" fill="#16161a"/>
+  <text x="40" y="434" fill="#c9a84c" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="1.2">30-SECOND PREVIEWS</text>
+  <text x="40" y="460" fill="#8a8a93" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13">Hear a track before you decide</text>
+
+  <!-- track 1 playing -->
+  <g transform="translate(40,484)">
+    <circle cx="14" cy="14" r="14" fill="#c9a84c"/>
+    <path d="M11 8 L11 20 L20 14 Z" fill="#121212"/>
+    <text x="42" y="12" fill="#ffffff" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">Unity Village</text>
+    <text x="42" y="32" fill="#8a8a93" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12">3:42 · previewing</text>
+    <rect x="200" y="10" width="90" height="4" rx="2" fill="#ffffff22"/>
+    <rect x="200" y="10" width="38" height="4" rx="2" fill="#c9a84c"/>
+    <text x="250" y="32" text-anchor="middle" fill="#c9a84c" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="11" font-weight="600">0:12 / 0:30</text>
+  </g>
+
+  <rect x="40" y="546" width="310" height="1" fill="#ffffff14"/>
+
+  <g transform="translate(40,566)">
+    <circle cx="14" cy="14" r="14" fill="#1f1f24" stroke="#ffffff22" stroke-width="1"/>
+    <path d="M11 8 L11 20 L20 14 Z" fill="#ffffff"/>
+    <text x="42" y="12" fill="#ffffff" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">Missouri Uncompromised</text>
+    <text x="42" y="32" fill="#8a8a93" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12">4:18 · tap to preview</text>
+  </g>
+
+  <rect x="40" y="618" width="310" height="1" fill="#ffffff14"/>
+
+  <g transform="translate(40,638)">
+    <circle cx="14" cy="14" r="14" fill="#1f1f24" stroke="#ffffff22" stroke-width="1"/>
+    <path d="M11 8 L11 20 L20 14 Z" fill="#ffffff"/>
+    <text x="42" y="12" fill="#ffffff" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">Midwestern Nights Dream</text>
+    <text x="42" y="32" fill="#8a8a93" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12">6:00 · tap to preview</text>
+  </g>
+
+  <rect x="40" y="690" width="310" height="1" fill="#ffffff14"/>
+
+  <g transform="translate(40,710)">
+    <circle cx="14" cy="14" r="14" fill="#1f1f24" stroke="#ffffff22" stroke-width="1"/>
+    <path d="M11 8 L11 20 L20 14 Z" fill="#ffffff"/>
+    <text x="42" y="12" fill="#ffffff" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="15" font-weight="600">Unquity Road</text>
+    <text x="42" y="32" fill="#8a8a93" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="12">3:36 · tap to preview</text>
+  </g>
+
+  <rect x="0" y="764" width="390" height="80" fill="#121212"/>
+  <rect x="0" y="764" width="390" height="1" fill="#ffffff14"/>
+  <g fill="#8a8a93" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="10" text-anchor="middle">
+    <circle cx="55" cy="790" r="8" fill="#8a8a93"/>
+    <text x="55" y="816">Shelf</text>
+    <rect x="140" y="782" width="16" height="16" rx="3" fill="#8a8a93"/>
+    <text x="148" y="816">Pile</text>
+    <circle cx="241" cy="790" r="10" fill="none" stroke="#8a8a93" stroke-width="2"/>
+    <text x="241" y="816">Scan</text>
+    <rect x="316" y="782" width="16" height="16" rx="8" fill="#8a8a93"/>
+    <text x="324" y="816">Want</text>
+  </g>
+</svg>
