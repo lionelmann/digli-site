@@ -1037,11 +1037,9 @@ button {
 }
 
 .legal {
-  /* Match page-hero title column: max 46rem, inset from viewport edges.
-     Do NOT put --page-inset inside a 46rem width — on large screens the
-     inset alone exceeds the box and shoves the copy into a right column. */
+  /* Same left edge as .page-hero__inner (page inset), readable max width */
   width: min(46rem, calc(100% - 2 * var(--page-inset)));
-  margin-inline: max(var(--page-inset), calc((100% - 46rem) / 2));
+  margin: 0 0 0 var(--page-inset);
   padding: 0 0 4.5rem;
   display: grid;
   gap: 0.85rem;
@@ -1071,7 +1069,7 @@ button {
 .legal ul,
 .legal ol {
   margin: 0.25rem 0 0;
-  padding-left: 1.25rem;
+  padding-left: 1.55rem;
   color: var(--ink-soft);
 }
 
