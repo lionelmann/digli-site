@@ -1047,12 +1047,6 @@ button {
   }
 }
 
-.support-path {
-  margin: 0.85rem 0 0;
-  color: var(--ink-soft);
-  font-size: 0.95rem;
-}
-
 .legal {
   width: min(100%, 46rem);
   margin: 0 auto;
