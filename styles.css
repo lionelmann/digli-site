@@ -92,11 +92,21 @@ button {
 }
 
 .wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
   font-weight: 700;
   letter-spacing: -0.05em;
   line-height: 1;
   text-transform: lowercase;
   white-space: nowrap;
+}
+
+.wordmark__mark {
+  width: 1.05em;
+  height: 1.05em;
+  flex-shrink: 0;
+  display: block;
 }
 
 .eyebrow {
@@ -141,6 +151,12 @@ button {
 .nav .wordmark {
   font-size: 1.45rem;
   z-index: 2;
+  color: var(--gold-deep);
+}
+
+.nav .wordmark__mark {
+  width: 1.35rem;
+  height: 1.35rem;
 }
 
 .nav__links {
@@ -387,7 +403,6 @@ button {
 
 .phone {
   width: min(100%, 17.5rem);
-  filter: drop-shadow(var(--phone-shadow));
 }
 
 .phone__bezel {
@@ -396,6 +411,7 @@ button {
   border-radius: 2.35rem;
   padding: 0.5rem;
   border: 1px solid #3a3228;
+  box-shadow: var(--phone-shadow);
 }
 
 .phone__notch {
@@ -420,13 +436,21 @@ button {
   background: #0b0b0f;
 }
 
-/* Real screenshots: fill the bezel cleanly, no fake notch over UI */
+/* Real screenshots: simple bezel, no status overlay, no stretch */
 .phone--photo .phone__notch {
   display: none;
 }
 
+.phone--photo .phone__bezel::before,
+.phone--photo .phone__bezel::after {
+  content: none;
+}
+
 .phone--photo .phone__screen {
-  object-fit: fill;
+  /* Match the capture ratio (~370×620) so phones share one height */
+  aspect-ratio: 370 / 620;
+  object-fit: cover;
+  object-position: top center;
 }
 
 /* Dig Profile samples (inside feature copy) */
@@ -832,6 +856,7 @@ button {
 .closing .wordmark {
   font-size: clamp(2.2rem, 6vw, 3.2rem);
   margin: 0.85rem 0 0.7rem;
+  color: var(--gold-deep);
 }
 
 .closing__copy {
@@ -857,6 +882,10 @@ button {
   padding: 1.6rem var(--page-inset) 2.4rem;
   display: grid;
   gap: 1rem;
+}
+
+.site-footer .wordmark {
+  color: var(--gold-deep);
 }
 
 .footer-nav {

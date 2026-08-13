@@ -1,18 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Digli">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#667eea"/>
-      <stop offset="100%" stop-color="#764ba2"/>
-    </linearGradient>
-  </defs>
-  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
-  <g transform="translate(256 256)" fill="none" stroke="#ffffff" stroke-width="7" opacity="0.95">
-    <circle r="150" stroke-width="10"/>
-    <circle r="132"/>
-    <circle r="116"/>
-    <circle r="100"/>
-    <circle r="84"/>
-  </g>
-  <circle cx="256" cy="256" r="60" fill="#c9a84c"/>
-  <circle cx="256" cy="256" r="8" fill="#764ba2"/>
+  <rect width="512" height="512" fill="#f4eee4"/>
+
+  <!-- Darker outside → lighter inside -->
+  <circle cx="256" cy="256" r="208" fill="none" stroke="#9e8230" stroke-width="22" opacity="0.95"/>
+  <circle cx="256" cy="256" r="176" fill="none" stroke="#b8973f" stroke-width="18" opacity="0.75"/>
+  <circle cx="256" cy="256" r="146" fill="none" stroke="#c9a84c" stroke-width="14" opacity="0.5"/>
+  <circle cx="256" cy="256" r="120" fill="none" stroke="#d4bc74" stroke-width="11" opacity="0.35"/>
+  <circle cx="256" cy="256" r="96" fill="none" stroke="#e0d0a0" stroke-width="9" opacity="0.28"/>
+
+  <!-- Solid lowercase d, bowl optically centered in the rings -->
+  <path fill="#9e8230" d="M261.78238628733374 301.0454246025837Q249.52244937657844 301.0454246025837 240.602224887281 295.4735115460735Q231.68200039798361 289.90159848956336 226.7969078258961 279.93396097128647Q221.9118152538086 269.9663234530096 221.9118152538086 256.8134937119828Q221.9118152538086 243.54046645610376 226.85700658332226 233.33243390812234Q231.8021979128359 223.12440136014092 241.02291618926398 217.31209327392622Q250.24363446569208 211.4997851877115 262.98436143585644 211.4997851877115Q271.9302991174714 211.4997851877115 279.27078933165706 215.01118438990963Q286.6112795458427 218.52258359210776 290.5948907565382 224.92721736000163V171.0454246025837H311.47477845384526V298.864734193837H292.140260426959L290.81810872400166 285.6089888022872Q287.0233823167051 292.8378281119058 279.24503421850426 296.9416263572448Q271.4666861203034 301.0454246025837 261.78238628733374 301.0454246025837Z"/>
 </svg>
