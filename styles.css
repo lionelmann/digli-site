@@ -92,11 +92,21 @@ button {
 }
 
 .wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
   font-weight: 700;
   letter-spacing: -0.05em;
   line-height: 1;
   text-transform: lowercase;
   white-space: nowrap;
+}
+
+.wordmark__mark {
+  width: 1.05em;
+  height: 1.05em;
+  flex-shrink: 0;
+  display: block;
 }
 
 .eyebrow {
@@ -141,6 +151,11 @@ button {
 .nav .wordmark {
   font-size: 1.45rem;
   z-index: 2;
+}
+
+.nav .wordmark__mark {
+  width: 1.35rem;
+  height: 1.35rem;
 }
 
 .nav__links {
