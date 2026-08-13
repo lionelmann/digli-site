@@ -151,6 +151,7 @@ button {
 .nav .wordmark {
   font-size: 1.45rem;
   z-index: 2;
+  color: var(--gold-deep);
 }
 
 .nav .wordmark__mark {
@@ -881,6 +882,10 @@ button {
   padding: 1.6rem var(--page-inset) 2.4rem;
   display: grid;
   gap: 1rem;
+}
+
+.site-footer .wordmark {
+  color: var(--gold-deep);
 }
 
 .footer-nav {
