@@ -303,14 +303,14 @@ button {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  min-height: 34rem;
+  min-height: 28rem;
   position: relative;
 }
 
 .hero__phones {
   position: relative;
   width: min(100%, 22rem);
-  height: 34.5rem;
+  height: 30rem;
 }
 
 .hero__phones .phone {
@@ -342,14 +342,9 @@ button {
     padding-top: 4.5rem;
   }
 
-  .hero__stage {
-    justify-content: flex-end;
-    min-height: 42rem;
-  }
-
   .hero__phones {
     width: 26rem;
-    height: 42rem;
+    height: 36rem;
   }
 
   .hero__phones .phone--front {
@@ -359,7 +354,7 @@ button {
 
   .hero__phones .phone--back {
     width: 15rem;
-    right: 0;
+    right: -0.5rem;
   }
 }
 
@@ -420,6 +415,7 @@ button {
   height: auto;
   aspect-ratio: 390 / 844;
   object-fit: cover;
+  object-position: top center;
   border-radius: 1.85rem;
   background: #0b0b0f;
 }
