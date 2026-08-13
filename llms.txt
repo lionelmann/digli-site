@@ -1,0 +1,54 @@
+# Digli
+
+> Digli is a vinyl companion app for iPhone. Scan album covers or barcodes, build your collection, and get recommendations based on what you already own — not what’s trending.
+
+Digli helps record collectors know their shelf and decide what to hunt, buy, and play next. It runs on iPhone. The web app entry point is https://app.digli.ca. The marketing site is https://digli.ca.
+
+## Product facts
+
+- Platform: iPhone (iOS)
+- Free tier: 10 free scans, no credit card required
+- Digli Pro: $3.99 USD / month via Apple In-App Purchase
+- Website: https://digli.ca
+- App: https://app.digli.ca
+- Support: https://digli.ca/support.html
+- Privacy: https://digli.ca/privacy.html
+- Terms: https://digli.ca/terms.html
+
+## What Digli does
+
+1. Scan a record cover or barcode → Digli identifies the release and adds it to the Dig Pile
+2. File keepers to Your Shelf (owned) or Want List (still hunting)
+3. Digli learns how you collect and surfaces fit, hunt, and play suggestions
+
+## Core features
+
+- Dig Profile: a collector portrait built from Your Shelf (personality, insights, taste tags)
+- Collection Match: scores how a record fits what you already own, with reasons
+- Worth the Hunt: personalized suggestions for records to look for next
+- Discogs import: bring an existing Discogs collection onto Your Shelf (one free import; Pro keeps sync)
+- Dig Pile: inbox for every scan before filing
+- Your Shelf: owned records, browsable by genre
+- Want List: records you’re still hunting
+- Today’s Spin: one record from your shelf to play today
+- Match My Mood: pick a feeling; Digli picks a record from your shelf
+- 30-second track previews: hear a track before you decide
+
+## Pricing
+
+- Free: 10 scans to start; cover/barcode scan; Dig Pile, Shelf, Want List; one Discogs import; no card
+- Digli Pro ($3.99/month): unlimited scans; full Dig Profile; Collection Match and Same Orbit; Worth the Hunt and Match My Mood; Today’s Spin, Liner Notes, Discogs sync
+- Manage, cancel, or restore Digli Pro through Apple ID subscriptions
+
+## Who it’s for
+
+Vinyl collectors who shop in record stores, catalog what they own, and want recommendations rooted in their shelf — crate diggers, completists, and everyday collectors.
+
+## How to get help
+
+Use Account → Feedback inside the Digli iPhone app. Billing and cancellations are handled by Apple.
+
+## Optional
+
+- [Full product notes for assistants](https://digli.ca/llms-full.txt): longer FAQ-style facts for citation
+- [Support FAQ](https://digli.ca/support.html): scanning, billing, Discogs, Dig Profile
