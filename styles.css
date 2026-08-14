@@ -619,9 +619,33 @@ button {
   text-align: center;
 }
 
-.shot .phone,
-.shot .phone--photo {
+.shot__zoom {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+  border-radius: 2.35rem;
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+}
+
+.shot__zoom:hover,
+.shot__zoom:focus-visible {
+  transform: translateY(-0.2rem) scale(1.02);
+}
+
+.shot__zoom:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 4px;
+}
+
+.shot__zoom .phone,
+.shot__zoom .phone--photo {
   width: min(100%, 12.5rem);
+  margin-inline: auto;
+  pointer-events: none;
 }
 
 .shot figcaption {
@@ -647,9 +671,103 @@ button {
     gap: 1.5rem 1rem;
   }
 
-  .shot .phone,
-  .shot .phone--photo {
+  .shot__zoom .phone,
+  .shot__zoom .phone--photo {
     width: 100%;
+  }
+}
+
+/* Screenshot lightbox */
+
+.lightbox {
+  width: min(100% - 2rem, 26rem);
+  max-width: 100%;
+  max-height: min(94vh, 52rem);
+  margin: auto;
+  padding: 0.85rem 0.85rem 1.1rem;
+  border: 0;
+  border-radius: 1.35rem;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 1.5rem 3.5rem rgba(28, 22, 16, 0.28);
+}
+
+.lightbox::backdrop {
+  background: rgba(22, 18, 14, 0.62);
+  backdrop-filter: blur(6px);
+}
+
+.lightbox__bar {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 0.55rem;
+}
+
+.lightbox__close {
+  margin: 0;
+  padding: 0.35rem 0.7rem;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(28, 22, 16, 0.08);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.85rem;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+}
+
+.lightbox__close:hover,
+.lightbox__close:focus-visible {
+  background: rgba(28, 22, 16, 0.14);
+}
+
+.lightbox__close:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.lightbox__frame {
+  display: flex;
+  justify-content: center;
+}
+
+.lightbox__frame .phone,
+.lightbox__img {
+  width: min(100%, 22rem);
+  height: auto;
+  display: block;
+}
+
+.lightbox__img {
+  border-radius: 2.1rem;
+  box-shadow: var(--phone-shadow);
+  background: #0b0b0f;
+}
+
+.lightbox__caption {
+  margin: 0.9rem 0.25rem 0;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: var(--ink-soft);
+}
+
+.lightbox__caption strong {
+  display: block;
+  margin-bottom: 0.15rem;
+  color: var(--ink);
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shot__zoom {
+    transition: none;
+  }
+
+  .shot__zoom:hover,
+  .shot__zoom:focus-visible {
+    transform: none;
   }
 }
 

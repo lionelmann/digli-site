@@ -36,3 +36,48 @@ if ("IntersectionObserver" in window && revealItems.length) {
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
+
+const lightbox = document.getElementById("shot-lightbox");
+const lightboxImg = lightbox?.querySelector(".lightbox__img");
+const lightboxCaption = lightbox?.querySelector(".lightbox__caption");
+
+if (lightbox && lightboxImg && lightboxCaption) {
+  const openShot = (button) => {
+    const img = button.querySelector(".phone__screen");
+    const figure = button.closest(".shot");
+    const caption = figure?.querySelector("figcaption");
+    if (!img) return;
+
+    lightboxImg.src = img.currentSrc || img.src;
+    lightboxImg.alt = img.alt || "";
+    lightboxCaption.replaceChildren();
+    if (caption) {
+      const title = caption.querySelector("strong");
+      const detail = caption.querySelector("span");
+      if (title) {
+        const strong = document.createElement("strong");
+        strong.textContent = title.textContent || "";
+        lightboxCaption.append(strong);
+      }
+      if (detail) {
+        lightboxCaption.append(document.createTextNode(detail.textContent || ""));
+      }
+    }
+
+    if (typeof lightbox.showModal === "function") {
+      lightbox.showModal();
+    } else {
+      lightbox.setAttribute("open", "");
+    }
+  };
+
+  document.querySelectorAll(".shot__zoom").forEach((button) => {
+    button.addEventListener("click", () => openShot(button));
+  });
+
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) {
+      lightbox.close();
+    }
+  });
+}
