@@ -418,7 +418,7 @@ button {
 
 /* Real captures are 440×929 — bit under native so frames stay sharp but not huge */
 .phone--photo {
-  width: min(100%, 21rem);
+  width: min(100%, 18.5rem);
 }
 
 .phone__bezel {
