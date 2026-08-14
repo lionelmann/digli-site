@@ -36,3 +36,61 @@ if ("IntersectionObserver" in window && revealItems.length) {
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
+
+const lightbox = document.getElementById("shot-lightbox");
+const lightboxImg = lightbox?.querySelector(".lightbox__img");
+const lightboxTitle = lightbox?.querySelector("#lightbox-title");
+const lightboxDetail = lightbox?.querySelector(".lightbox__detail");
+const lightboxClose = lightbox?.querySelector(".lightbox__close");
+const lightboxStage = lightbox?.querySelector(".lightbox__stage");
+let lightboxLastFocus = null;
+
+if (lightbox && lightboxImg && lightboxTitle && lightboxDetail && lightboxClose) {
+  const closeLightbox = () => {
+    lightbox.hidden = true;
+    document.body.classList.remove("lightbox-open");
+    if (lightboxLastFocus && typeof lightboxLastFocus.focus === "function") {
+      lightboxLastFocus.focus();
+    }
+    lightboxLastFocus = null;
+  };
+
+  const openShot = (button) => {
+    const img = button.querySelector(".phone__screen");
+    const figure = button.closest(".shot");
+    const caption = figure?.querySelector("figcaption");
+    if (!img) return;
+
+    lightboxImg.src = img.currentSrc || img.src;
+    lightboxImg.alt = img.alt || "";
+    lightboxTitle.textContent = caption?.querySelector("strong")?.textContent || "";
+    lightboxDetail.textContent = caption?.querySelector("span")?.textContent || "";
+
+    lightboxLastFocus = document.activeElement;
+    lightbox.hidden = false;
+    document.body.classList.add("lightbox-open");
+    lightboxClose.focus();
+  };
+
+  document.querySelectorAll(".shot__zoom").forEach((button) => {
+    button.addEventListener("click", () => openShot(button));
+  });
+
+  lightboxClose.addEventListener("click", closeLightbox);
+
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) {
+      closeLightbox();
+    }
+  });
+
+  lightboxStage?.addEventListener("click", (event) => {
+    event.stopPropagation();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !lightbox.hidden) {
+      closeLightbox();
+    }
+  });
+}

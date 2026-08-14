@@ -296,100 +296,110 @@
         </div>
         <div class="shots__grid">
           <figure class="shot">
-            <div class="phone phone--photo">
-              <div class="phone__bezel">
-                <div class="phone__notch"></div>
-                <img
-                  class="phone__screen"
-                  src="/assets/screens/digli-dig-profile.png"
-                  width="440"
-                  height="929"
-                  alt="Dig Profile screen"
-                  loading="lazy"
-                  decoding="async"
-                />
+            <button type="button" class="shot__zoom" aria-label="Enlarge Dig Profile screen">
+              <div class="phone phone--photo">
+                <div class="phone__bezel">
+                  <div class="phone__notch"></div>
+                  <img
+                    class="phone__screen"
+                    src="/assets/screens/digli-dig-profile.png"
+                    width="440"
+                    height="929"
+                    alt="Dig Profile screen"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
               </div>
-            </div>
+            </button>
             <figcaption>
               <strong>Dig Profile</strong>
               <span>How you collect, from your shelf</span>
             </figcaption>
           </figure>
           <figure class="shot">
-            <div class="phone phone--photo">
-              <div class="phone__bezel">
-                <div class="phone__notch"></div>
-                <img
-                  class="phone__screen"
-                  src="/assets/screens/digli-collection-match.png"
-                  width="440"
-                  height="929"
-                  alt="Collection Match screen"
-                  loading="lazy"
-                  decoding="async"
-                />
+            <button type="button" class="shot__zoom" aria-label="Enlarge Collection Match screen">
+              <div class="phone phone--photo">
+                <div class="phone__bezel">
+                  <div class="phone__notch"></div>
+                  <img
+                    class="phone__screen"
+                    src="/assets/screens/digli-collection-match.png"
+                    width="440"
+                    height="929"
+                    alt="Collection Match screen"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
               </div>
-            </div>
+            </button>
             <figcaption>
               <strong>Collection Match</strong>
               <span>Does this record fit what you own?</span>
             </figcaption>
           </figure>
           <figure class="shot">
-            <div class="phone phone--photo">
-              <div class="phone__bezel">
-                <div class="phone__notch"></div>
-                <img
-                  class="phone__screen"
-                  src="/assets/screens/digli-your-shelf.png"
-                  width="440"
-                  height="929"
-                  alt="Your Shelf screen"
-                  loading="lazy"
-                  decoding="async"
-                />
+            <button type="button" class="shot__zoom" aria-label="Enlarge Your Shelf screen">
+              <div class="phone phone--photo">
+                <div class="phone__bezel">
+                  <div class="phone__notch"></div>
+                  <img
+                    class="phone__screen"
+                    src="/assets/screens/digli-your-shelf.png"
+                    width="440"
+                    height="929"
+                    alt="Your Shelf screen"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
               </div>
-            </div>
+            </button>
             <figcaption>
               <strong>Your Shelf</strong>
               <span>Owned records in one place</span>
             </figcaption>
           </figure>
           <figure class="shot">
-            <div class="phone phone--photo">
-              <div class="phone__bezel">
-                <div class="phone__notch"></div>
-                <img
-                  class="phone__screen"
-                  src="/assets/screens/digli-track-list.png"
-                  width="440"
-                  height="929"
-                  alt="Album screen with 30-second track previews"
-                  loading="lazy"
-                  decoding="async"
-                />
+            <button type="button" class="shot__zoom" aria-label="Enlarge Album screen with 30-second track previews">
+              <div class="phone phone--photo">
+                <div class="phone__bezel">
+                  <div class="phone__notch"></div>
+                  <img
+                    class="phone__screen"
+                    src="/assets/screens/digli-track-list.png"
+                    width="440"
+                    height="929"
+                    alt="Album screen with 30-second track previews"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
               </div>
-            </div>
+            </button>
             <figcaption>
               <strong>30-second previews</strong>
               <span>Hear a track before you decide</span>
             </figcaption>
           </figure>
           <figure class="shot">
-            <div class="phone phone--photo">
-              <div class="phone__bezel">
-                <div class="phone__notch"></div>
-                <img
-                  class="phone__screen"
-                  src="/assets/screens/digli-match-my-mood.png"
-                  width="440"
-                  height="929"
-                  alt="Match My Mood screen"
-                  loading="lazy"
-                  decoding="async"
-                />
+            <button type="button" class="shot__zoom" aria-label="Enlarge Match My Mood screen">
+              <div class="phone phone--photo">
+                <div class="phone__bezel">
+                  <div class="phone__notch"></div>
+                  <img
+                    class="phone__screen"
+                    src="/assets/screens/digli-match-my-mood.png"
+                    width="440"
+                    height="929"
+                    alt="Match My Mood screen"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
               </div>
-            </div>
+            </button>
             <figcaption>
               <strong>Match My Mood</strong>
               <span>Pick a feeling. Digli picks the record.</span>
@@ -648,6 +658,27 @@
         <p class="footer-copy">Copyright © <span id="year"></span> Digli. All rights reserved.</p>
       </div>
     </footer>
+
+
+    <div
+      class="lightbox"
+      id="shot-lightbox"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="lightbox-title"
+    >
+      <button type="button" class="lightbox__close" aria-label="Close screenshot">
+        <span aria-hidden="true"></span>
+      </button>
+      <figure class="lightbox__stage">
+        <img class="lightbox__img" src="" alt="" width="440" height="929" />
+        <figcaption class="lightbox__caption">
+          <strong id="lightbox-title"></strong>
+          <span class="lightbox__detail"></span>
+        </figcaption>
+      </figure>
+    </div>
 
     <script src="/main.js" defer></script>
   </body>
