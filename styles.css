@@ -680,9 +680,9 @@ button {
 /* Screenshot lightbox */
 
 .lightbox {
-  width: min(100% - 2rem, 26rem);
+  width: min(100% - 1.5rem, 30rem);
   max-width: 100%;
-  max-height: min(94vh, 52rem);
+  max-height: min(96vh, 58rem);
   margin: auto;
   padding: 0.85rem 0.85rem 1.1rem;
   border: 0;
@@ -690,6 +690,7 @@ button {
   background: var(--paper);
   color: var(--ink);
   box-shadow: 0 1.5rem 3.5rem rgba(28, 22, 16, 0.28);
+  overflow: auto;
 }
 
 .lightbox::backdrop {
@@ -731,14 +732,10 @@ button {
   justify-content: center;
 }
 
-.lightbox__frame .phone,
 .lightbox__img {
-  width: min(100%, 22rem);
+  width: min(100%, 440px);
   height: auto;
   display: block;
-}
-
-.lightbox__img {
   border-radius: 2.1rem;
   box-shadow: var(--phone-shadow);
   background: #0b0b0f;
