@@ -319,14 +319,14 @@ button {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  min-height: 28rem;
+  min-height: 36rem;
   position: relative;
 }
 
 .hero__phones {
   position: relative;
-  width: min(100%, 22rem);
-  height: 30rem;
+  width: min(100%, 26rem);
+  height: 40rem;
 }
 
 .hero__phones .phone {
@@ -335,17 +335,22 @@ button {
 }
 
 .hero__phones .phone--front {
-  left: 12%;
+  left: 0;
   z-index: 2;
-  width: 15.5rem;
+  width: min(100%, 18.5rem);
 }
 
 .hero__phones .phone--back {
   right: 0;
-  bottom: 2.5rem;
-  width: 13rem;
+  bottom: 1.75rem;
+  width: min(100%, 17.5rem);
   opacity: 0.92;
-  transform: rotate(7deg);
+  transform: rotate(6deg);
+  transform-origin: center bottom;
+}
+
+.hero__phones .phone--back .phone__screen {
+  backface-visibility: hidden;
 }
 
 @media (min-width: 960px) {
@@ -358,19 +363,25 @@ button {
     padding-top: 4.5rem;
   }
 
+  .hero__stage {
+    justify-content: flex-end;
+    min-height: 42rem;
+  }
+
   .hero__phones {
-    width: 26rem;
-    height: 36rem;
+    width: 30rem;
+    height: 44rem;
   }
 
   .hero__phones .phone--front {
-    width: 18rem;
+    width: 18.5rem;
     left: 0;
   }
 
   .hero__phones .phone--back {
-    width: 15rem;
+    width: 17.5rem;
     right: -0.5rem;
+    bottom: 2.25rem;
   }
 }
 
@@ -405,6 +416,11 @@ button {
   width: min(100%, 17.5rem);
 }
 
+/* Real captures are 440×929 — bit under native so frames stay sharp but not huge */
+.phone--photo {
+  width: min(100%, 18.5rem);
+}
+
 .phone__bezel {
   position: relative;
   background: #1a1612;
@@ -436,7 +452,7 @@ button {
   background: #0b0b0f;
 }
 
-/* Real screenshots: simple bezel, no status overlay, no stretch */
+/* Match file ratio (440/929); avoid cover-resampling that crunches UI text */
 .phone--photo .phone__notch {
   display: none;
 }
@@ -447,9 +463,9 @@ button {
 }
 
 .phone--photo .phone__screen {
-  /* Match the capture ratio (~370×620) so phones share one height */
-  aspect-ratio: 370 / 620;
-  object-fit: cover;
+  aspect-ratio: 440 / 929;
+  height: auto;
+  object-fit: fill;
   object-position: top center;
 }
 
@@ -590,6 +606,7 @@ button {
   display: grid;
   gap: 1.75rem 1.25rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
 }
 
 .shot {
@@ -597,16 +614,20 @@ button {
   display: grid;
   gap: 0.85rem;
   justify-items: center;
+  align-content: start;
+  align-items: start;
   text-align: center;
 }
 
-.shot .phone {
+.shot .phone,
+.shot .phone--photo {
   width: min(100%, 12.5rem);
 }
 
 .shot figcaption {
   display: grid;
   gap: 0.2rem;
+  align-content: start;
 }
 
 .shot figcaption strong {
@@ -626,7 +647,8 @@ button {
     gap: 1.5rem 1rem;
   }
 
-  .shot .phone {
+  .shot .phone,
+  .shot .phone--photo {
     width: 100%;
   }
 }
