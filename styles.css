@@ -646,7 +646,8 @@ button {
     gap: 1.5rem 1rem;
   }
 
-  .shot .phone {
+  .shot .phone,
+  .shot .phone--photo {
     width: 100%;
   }
 }
