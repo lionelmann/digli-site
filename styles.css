@@ -1138,15 +1138,94 @@ button {
 
 .reveal {
   opacity: 0;
-  transform: translateY(1.25rem);
+  transform: translateY(0.9rem);
   transition:
-    opacity 0.7s var(--ease),
-    transform 0.7s var(--ease);
+    opacity 0.65s var(--ease),
+    transform 0.65s var(--ease);
 }
 
 .reveal.is-visible {
   opacity: 1;
   transform: none;
+}
+
+/* Stagger nested bits once a section enters view */
+.reveal .step,
+.reveal .shot,
+.reveal .extra,
+.reveal .plan,
+.reveal .feature__samples li,
+.reveal .feature__copy,
+.reveal .feature__media {
+  opacity: 0;
+  transform: translateY(0.75rem);
+  transition:
+    opacity 0.55s var(--ease),
+    transform 0.55s var(--ease);
+}
+
+.reveal.is-visible .step,
+.reveal.is-visible .shot,
+.reveal.is-visible .extra,
+.reveal.is-visible .plan,
+.reveal.is-visible .feature__samples li,
+.reveal.is-visible .feature__copy,
+.reveal.is-visible .feature__media {
+  opacity: 1;
+  transform: none;
+}
+
+.reveal.is-visible .step:nth-child(1),
+.reveal.is-visible .shot:nth-child(1),
+.reveal.is-visible .extra:nth-child(1),
+.reveal.is-visible .plan:nth-child(1),
+.reveal.is-visible .feature__samples li:nth-child(1) {
+  transition-delay: 0.04s;
+}
+
+.reveal.is-visible .step:nth-child(2),
+.reveal.is-visible .shot:nth-child(2),
+.reveal.is-visible .extra:nth-child(2),
+.reveal.is-visible .plan:nth-child(2),
+.reveal.is-visible .feature__samples li:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.reveal.is-visible .step:nth-child(3),
+.reveal.is-visible .shot:nth-child(3),
+.reveal.is-visible .extra:nth-child(3),
+.reveal.is-visible .feature__samples li:nth-child(3) {
+  transition-delay: 0.16s;
+}
+
+.reveal.is-visible .shot:nth-child(4),
+.reveal.is-visible .extra:nth-child(4) {
+  transition-delay: 0.22s;
+}
+
+.reveal.is-visible .shot:nth-child(5),
+.reveal.is-visible .extra:nth-child(5) {
+  transition-delay: 0.28s;
+}
+
+.reveal.is-visible .extra:nth-child(6) {
+  transition-delay: 0.34s;
+}
+
+.reveal.is-visible .feature__copy {
+  transition-delay: 0.06s;
+}
+
+.reveal.is-visible .feature__media {
+  transition-delay: 0.16s;
+}
+
+.reveal.feature--flip.is-visible .feature__media {
+  transition-delay: 0.06s;
+}
+
+.reveal.feature--flip.is-visible .feature__copy {
+  transition-delay: 0.16s;
 }
 
 .hero__copy > * {
@@ -1191,7 +1270,14 @@ button {
 
   .hero__copy > *,
   .reveal-phone,
-  .reveal {
+  .reveal,
+  .reveal .step,
+  .reveal .shot,
+  .reveal .extra,
+  .reveal .plan,
+  .reveal .feature__samples li,
+  .reveal .feature__copy,
+  .reveal .feature__media {
     animation: none !important;
     transition: none !important;
     opacity: 1 !important;
