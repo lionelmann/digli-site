@@ -1212,6 +1212,18 @@ button {
   transition-delay: 0.34s;
 }
 
+.reveal.is-visible .extra:nth-child(7) {
+  transition-delay: 0.4s;
+}
+
+.reveal.is-visible .extra:nth-child(8) {
+  transition-delay: 0.46s;
+}
+
+.reveal.is-visible .extra:nth-child(9) {
+  transition-delay: 0.52s;
+}
+
 .reveal.is-visible .feature__copy {
   transition-delay: 0.06s;
 }
