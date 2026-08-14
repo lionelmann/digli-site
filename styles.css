@@ -319,14 +319,14 @@ button {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  min-height: 32rem;
+  min-height: 28rem;
   position: relative;
 }
 
 .hero__phones {
   position: relative;
   width: min(100%, 22rem);
-  height: 34rem;
+  height: 30rem;
 }
 
 .hero__phones .phone {
@@ -360,7 +360,7 @@ button {
 
   .hero__phones {
     width: 26rem;
-    height: 40rem;
+    height: 36rem;
   }
 
   .hero__phones .phone--front {
@@ -436,6 +436,7 @@ button {
   background: #0b0b0f;
 }
 
+/* Real screenshots: keep the same chunky phone size as before */
 .phone--photo .phone__notch {
   display: none;
 }
@@ -445,9 +446,8 @@ button {
   content: none;
 }
 
-/* Full iPhone bezel again — new captures are phone-tall (~440×929) */
 .phone--photo .phone__screen {
-  aspect-ratio: 390 / 844;
+  aspect-ratio: 370 / 620;
   object-fit: cover;
   object-position: top center;
 }
