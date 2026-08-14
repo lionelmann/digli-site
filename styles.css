@@ -319,14 +319,14 @@ button {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  min-height: 28rem;
+  min-height: 34rem;
   position: relative;
 }
 
 .hero__phones {
   position: relative;
   width: min(100%, 22rem);
-  height: 30rem;
+  height: 34.5rem;
 }
 
 .hero__phones .phone {
@@ -358,9 +358,14 @@ button {
     padding-top: 4.5rem;
   }
 
+  .hero__stage {
+    justify-content: flex-end;
+    min-height: 42rem;
+  }
+
   .hero__phones {
     width: 26rem;
-    height: 36rem;
+    height: 42rem;
   }
 
   .hero__phones .phone--front {
@@ -436,7 +441,7 @@ button {
   background: #0b0b0f;
 }
 
-/* Real screenshots: keep the same chunky phone size as before */
+/* Real screenshots: same tall iPhone ratio as the original SVG fillers */
 .phone--photo .phone__notch {
   display: none;
 }
@@ -447,7 +452,7 @@ button {
 }
 
 .phone--photo .phone__screen {
-  aspect-ratio: 370 / 620;
+  aspect-ratio: 390 / 844;
   object-fit: cover;
   object-position: top center;
 }
