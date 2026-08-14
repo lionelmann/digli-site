@@ -39,11 +39,13 @@ if ("IntersectionObserver" in window && revealItems.length) {
 
 const lightbox = document.getElementById("shot-lightbox");
 const lightboxImg = lightbox?.querySelector(".lightbox__img");
-const lightboxCaption = lightbox?.querySelector(".lightbox__caption");
+const lightboxTitle = lightbox?.querySelector("#lightbox-title");
+const lightboxDetail = lightbox?.querySelector(".lightbox__detail");
 const lightboxClose = lightbox?.querySelector(".lightbox__close");
+const lightboxStage = lightbox?.querySelector(".lightbox__stage");
 let lightboxLastFocus = null;
 
-if (lightbox && lightboxImg && lightboxCaption && lightboxClose) {
+if (lightbox && lightboxImg && lightboxTitle && lightboxDetail && lightboxClose) {
   const closeLightbox = () => {
     lightbox.hidden = true;
     document.body.classList.remove("lightbox-open");
@@ -61,19 +63,8 @@ if (lightbox && lightboxImg && lightboxCaption && lightboxClose) {
 
     lightboxImg.src = img.currentSrc || img.src;
     lightboxImg.alt = img.alt || "";
-    lightboxCaption.replaceChildren();
-    if (caption) {
-      const title = caption.querySelector("strong");
-      const detail = caption.querySelector("span");
-      if (title) {
-        const strong = document.createElement("strong");
-        strong.textContent = title.textContent || "";
-        lightboxCaption.append(strong);
-      }
-      if (detail) {
-        lightboxCaption.append(document.createTextNode(detail.textContent || ""));
-      }
-    }
+    lightboxTitle.textContent = caption?.querySelector("strong")?.textContent || "";
+    lightboxDetail.textContent = caption?.querySelector("span")?.textContent || "";
 
     lightboxLastFocus = document.activeElement;
     lightbox.hidden = false;
@@ -91,6 +82,10 @@ if (lightbox && lightboxImg && lightboxCaption && lightboxClose) {
     if (event.target === lightbox) {
       closeLightbox();
     }
+  });
+
+  lightboxStage?.addEventListener("click", (event) => {
+    event.stopPropagation();
   });
 
   document.addEventListener("keydown", (event) => {
