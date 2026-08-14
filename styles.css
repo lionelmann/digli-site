@@ -442,7 +442,7 @@ button {
   background: #0b0b0f;
 }
 
-/* Real screenshots: same tall iPhone ratio as the original SVG fillers */
+/* Real screenshots: keep the file’s native ratio so Linux/1× stays sharp */
 .phone--photo .phone__notch {
   display: none;
 }
@@ -453,9 +453,12 @@ button {
 }
 
 .phone--photo .phone__screen {
-  aspect-ratio: 390 / 844;
-  object-fit: cover;
+  aspect-ratio: auto;
+  height: auto;
+  object-fit: contain;
   object-position: top center;
+  image-rendering: auto;
+  -ms-interpolation-mode: bicubic;
 }
 
 /* Dig Profile samples (inside feature copy) */
