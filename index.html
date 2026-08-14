@@ -660,15 +660,26 @@
     </footer>
 
 
-    <dialog class="lightbox" id="shot-lightbox" aria-label="App screenshot">
-      <form method="dialog" class="lightbox__bar">
-        <button type="submit" class="lightbox__close" aria-label="Close screenshot">Close</button>
-      </form>
-      <div class="lightbox__frame">
-        <img class="lightbox__img" src="" alt="" width="440" height="929" />
+    <div
+      class="lightbox"
+      id="shot-lightbox"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-label="App screenshot"
+    >
+      <div class="lightbox__panel">
+        <div class="lightbox__bar">
+          <button type="button" class="lightbox__close" aria-label="Close screenshot">
+            Close
+          </button>
+        </div>
+        <div class="lightbox__frame">
+          <img class="lightbox__img" src="" alt="" width="440" height="929" />
+        </div>
+        <p class="lightbox__caption"></p>
       </div>
-      <p class="lightbox__caption"></p>
-    </dialog>
+    </div>
 
     <script src="/main.js" defer></script>
   </body>

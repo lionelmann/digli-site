@@ -679,23 +679,36 @@ button {
 
 /* Screenshot lightbox */
 
+body.lightbox-open {
+  overflow: hidden;
+}
+
 .lightbox {
-  width: min(100% - 1.5rem, 30rem);
-  max-width: 100%;
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(22, 18, 14, 0.62);
+  backdrop-filter: blur(6px);
+}
+
+.lightbox[hidden] {
+  display: none;
+}
+
+.lightbox__panel {
+  width: min(100%, 30rem);
   max-height: min(96vh, 58rem);
-  margin: auto;
+  margin: 0;
   padding: 0.85rem 0.85rem 1.1rem;
-  border: 0;
   border-radius: 1.35rem;
   background: var(--paper);
   color: var(--ink);
   box-shadow: 0 1.5rem 3.5rem rgba(28, 22, 16, 0.28);
   overflow: auto;
-}
-
-.lightbox::backdrop {
-  background: rgba(22, 18, 14, 0.62);
-  backdrop-filter: blur(6px);
 }
 
 .lightbox__bar {
