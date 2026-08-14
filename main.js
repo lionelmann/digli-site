@@ -40,8 +40,19 @@ if ("IntersectionObserver" in window && revealItems.length) {
 const lightbox = document.getElementById("shot-lightbox");
 const lightboxImg = lightbox?.querySelector(".lightbox__img");
 const lightboxCaption = lightbox?.querySelector(".lightbox__caption");
+const lightboxClose = lightbox?.querySelector(".lightbox__close");
+let lightboxLastFocus = null;
 
-if (lightbox && lightboxImg && lightboxCaption) {
+if (lightbox && lightboxImg && lightboxCaption && lightboxClose) {
+  const closeLightbox = () => {
+    lightbox.hidden = true;
+    document.body.classList.remove("lightbox-open");
+    if (lightboxLastFocus && typeof lightboxLastFocus.focus === "function") {
+      lightboxLastFocus.focus();
+    }
+    lightboxLastFocus = null;
+  };
+
   const openShot = (button) => {
     const img = button.querySelector(".phone__screen");
     const figure = button.closest(".shot");
@@ -64,20 +75,27 @@ if (lightbox && lightboxImg && lightboxCaption) {
       }
     }
 
-    if (typeof lightbox.showModal === "function") {
-      lightbox.showModal();
-    } else {
-      lightbox.setAttribute("open", "");
-    }
+    lightboxLastFocus = document.activeElement;
+    lightbox.hidden = false;
+    document.body.classList.add("lightbox-open");
+    lightboxClose.focus();
   };
 
   document.querySelectorAll(".shot__zoom").forEach((button) => {
     button.addEventListener("click", () => openShot(button));
   });
 
+  lightboxClose.addEventListener("click", closeLightbox);
+
   lightbox.addEventListener("click", (event) => {
     if (event.target === lightbox) {
-      lightbox.close();
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !lightbox.hidden) {
+      closeLightbox();
     }
   });
 }
