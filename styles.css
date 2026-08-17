@@ -94,7 +94,7 @@ button {
 .wordmark {
   display: inline-flex;
   align-items: center;
-  gap: 0.4em;
+  gap: 0.18em;
   font-weight: 700;
   letter-spacing: -0.05em;
   line-height: 1;
@@ -107,6 +107,7 @@ button {
   height: 1.05em;
   flex-shrink: 0;
   display: block;
+  transform: translateY(0.08em);
 }
 
 .eyebrow {
