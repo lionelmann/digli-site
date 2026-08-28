@@ -388,17 +388,18 @@ button {
 
 .store-badge {
   display: inline-block;
-  transition: transform 0.25s var(--ease);
+  line-height: 0;
+  transition: opacity 0.25s var(--ease);
 }
 
 .store-badge:hover {
-  transform: translateY(-2px);
+  opacity: 0.88;
 }
 
 .store-badge img {
-  width: 120px;
-  min-height: 40px;
-  height: auto;
+  display: block;
+  width: 168px;
+  height: 56px;
 }
 
 .text-link {
