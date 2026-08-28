@@ -401,10 +401,6 @@ button {
   height: auto;
 }
 
-.page-hero__badge {
-  margin-top: 1.35rem;
-}
-
 .text-link {
   color: var(--gold-deep);
   font-weight: 600;
