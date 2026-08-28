@@ -396,7 +396,8 @@ button {
 }
 
 .store-badge img {
-  width: 168px;
+  width: 120px;
+  min-height: 40px;
   height: auto;
 }
 
