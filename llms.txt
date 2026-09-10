@@ -11,9 +11,9 @@ Digli helps record collectors know their shelf and decide what to hunt, buy, and
 - Digli Pro: $3.99 USD / month via Apple In-App Purchase
 - Website: https://digli.ca
 - App: https://app.digli.ca
-- Support: https://digli.ca/support.html
-- Privacy: https://digli.ca/privacy.html
-- Terms: https://digli.ca/terms.html
+- Support: https://digli.ca/support
+- Privacy: https://digli.ca/privacy
+- Terms: https://digli.ca/terms
 
 ## What Digli does
 
@@ -51,4 +51,4 @@ Use Account → Feedback inside the Digli iPhone app. Billing and cancellations 
 ## Optional
 
 - [Full product notes for assistants](https://digli.ca/llms-full.txt): longer FAQ-style facts for citation
-- [Support FAQ](https://digli.ca/support.html): scanning, billing, Discogs, Dig Profile
+- [Support FAQ](https://digli.ca/support): scanning, billing, Discogs, Dig Profile
