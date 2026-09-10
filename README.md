@@ -2,7 +2,7 @@
 
 Marketing site for [Digli](https://app.digli.ca) — the vinyl collection companion for iPhone.
 
-Warm, paper-and-gold product pages: homepage plus [support](/support.html). Brand assets and the Satoshi wordmark are mirrored from the app. Screen mockups live in `assets/screens/`.
+Warm, paper-and-gold product pages: homepage plus [support](/support). Brand assets and the Satoshi wordmark are mirrored from the app. Screen mockups live in `assets/screens/`.
 
 ## Local preview
 
